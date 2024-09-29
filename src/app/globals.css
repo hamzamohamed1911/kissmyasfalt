@@ -3,18 +3,12 @@
 @tailwind utilities;
 
 /* styles/globals.css */
+/* styles/globals.css */
 @font-face {
   font-family: 'Forte'; 
-  src: url('/public/fonts/FORTE.TTF') format('truetype'); 
-
+  src: url('/fonts/FORTE.TTF') format('truetype'); /* No need for /public/ in the URL */
 }
 
-
-/* Other global styles can go here */
-
-body {
-  font-family: 'Forte', sans-serif;
-}
 
 /* Global styles */
 * {
@@ -30,6 +24,7 @@ html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color:#f0ebe5;
+  font-family: 'Forte', sans-serif; 
 
 }
 
