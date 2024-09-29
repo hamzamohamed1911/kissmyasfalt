@@ -22,7 +22,7 @@ const WIIFM = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full">
           {/* Drivers Card */}
-          <div className="relative bg-white rounded-lg p-6 lg:h-[400px] h-full text-[#d71515] shadow-lg flex flex-col justify-between transition duration-500 ease-in-out grayscale-0 hover:grayscale">
+          <div className="relative bg-white rounded-lg md:p-8 p-3 lg:h-[400px] h-full text-[#d71515] shadow-lg flex flex-col justify-between transition duration-500 ease-in-out grayscale-0 hover:grayscale">
             <div className="absolute inset-0 rounded-lg overflow-hidden">
               <Image
                 src={rider}
@@ -62,7 +62,7 @@ const WIIFM = () => {
           </div>
 
           {/* Riders Card */}
-          <div className="relative bg-white rounded-lg p-6 lg:h-[400px] h-full text-[#d71515] shadow-lg flex flex-col justify-between transition duration-500 ease-in-out grayscale-0 hover:grayscale">
+          <div className="relative bg-white rounded-lg md:p-8 p-3 lg:h-[400px] h-full text-[#d71515] shadow-lg flex flex-col justify-between transition duration-500 ease-in-out grayscale-0 hover:grayscale">
             <div className="absolute inset-0 rounded-lg overflow-hidden ">
               <Image
                 src={driver}
@@ -102,7 +102,7 @@ const WIIFM = () => {
         </div>
 
         {/* Common Benefits */}
-        <div className="relative bg-white w-full rounded-lg p-8 mt-12 shadow-md text-center ">
+        <div className="relative bg-white w-full rounded-lg md:p-8 p-3 mt-12 shadow-md text-center ">
           <div className="absolute inset-0 rounded-lg overflow-hidden">
           <Image
         src={commonImg}

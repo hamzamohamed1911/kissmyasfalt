@@ -44,7 +44,7 @@ const AboutUs = () => {
 
       {/* Text Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
-          <div className="mb-6 mx-12">
+          <div className="mb-6 md:mx-12 mx-0">
             <h1 className="relative lg:text-5xl text-4xl text-tertiary font-bold leading-snug text-center lg:text-left lg:mb-6 mb-2">
               About Us
             </h1>
