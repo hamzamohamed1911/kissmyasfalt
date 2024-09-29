@@ -5,10 +5,12 @@ import { FaCirclePlus } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import TripsModal from "./TripsModal";
 import { TripsItemArr } from "../_constants";
+import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const TripsItem = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentTrip, setCurrentTrip] = useState(null);
+  const [showButton, setShowButton] = useState(null); 
 
   const openModal = (trip) => {
     setCurrentTrip(trip);
@@ -19,14 +21,25 @@ const TripsItem = () => {
     setIsModalOpen(false);
   };
 
+  const toggleShowButton = (index) => {
+    if (showButton === index) {
+      setShowButton(null); 
+    } else {
+      setShowButton(index); 
+    }
+  };
+
   return (
     <div>
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
         {TripsItemArr.map((trip, index) => (
-          <div
+          <motion.div
             key={index}
             className="rounded-lg overflow-hidden shadow-md border bg-white relative w-full lg:w-[400px] md:w-[350px] h-auto group"
+            onMouseEnter={() => setShowButton(index)} 
+            onMouseLeave={() => setShowButton(null)} 
+            onClick={() => toggleShowButton(index)} 
           >
             <div className="bg-white w-full h-[80%] overflow-hidden p-3 relative">
               <Image
@@ -36,30 +49,35 @@ const TripsItem = () => {
               />
               <motion.div
                 initial={{ y: 100, opacity: 0 }}
-                whileHover={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100"
+                animate={{
+                  y: showButton === index ? 0 : 100,
+                  opacity: showButton === index ? 1 : 0,
+                }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="absolute inset-0 flex items-center justify-center"
               >
                 <button onClick={() => openModal(trip)}>
                   <FaCirclePlus className="text-[#d71515] bg-white rounded-full text-6xl" />
                 </button>
               </motion.div>
             </div>
-            <div className="p-4 flex items-center">
-              <h3 className="text-2xl font-semibold text-[#d71515] text-start">
+            <div className="flex items-center justify-between p-6 text-[#d71515]">
+              <h3 className="font-semibold text-start lg:text-3xl text-2xl">
                 {trip.title}
               </h3>
+              <BsArrowUpRightCircle
+                size={50}
+                className={`text-3xl transition-transform duration-300 ease-in-out transform cursor-pointer ${
+                  showButton === index ? "rotate-45 bg-[#d71515] rounded-full text-white" : "" 
+                }`}
+              />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
       {currentTrip && (
-        <TripsModal
-          isOpen={isModalOpen}
-          onClose={closeModal}
-          {...currentTrip} 
-        />
+        <TripsModal isOpen={isModalOpen} onClose={closeModal} {...currentTrip} />
       )}
     </div>
   );

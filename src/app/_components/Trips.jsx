@@ -8,8 +8,8 @@ const Trips = () => {
     >
       <div className="flex items-center flex-col justify-center container w-full  h-auto py-8">
         <h2 className="lg:text-7xl text-5xl font-bold text-white mb-8 text-center">
-        Ride Types we offer
-                </h2>
+          Ride Types we offer
+        </h2>
         <TripsItem />
       </div>
     </section>

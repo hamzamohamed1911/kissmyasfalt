@@ -6,7 +6,6 @@ import { TripBg } from "../../../public";
 const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
   if (!isOpen) return null;
 
-  // Animation variants
   const modalVariants = {
     hidden: {
       opacity: 0,
@@ -45,7 +44,7 @@ const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
           <Image
             src={TripBg}
             alt={title}
-            className="w-full h-24 object-cover rounded-t-lg z-10"
+            className="w-full h-20 object-cover rounded-t-lg z-10"
           />
 
           <h2 className="text-2xl font-bold text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
