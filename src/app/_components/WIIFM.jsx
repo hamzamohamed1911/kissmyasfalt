@@ -36,7 +36,7 @@ const WIIFM = () => {
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#d71515] rounded-full p-5 shadow-lg z-10">
               <FaCar className="text-5xl text-white" />
             </div>
-            <h2 className="text-3xl font-bold relative z-10 mb-4 mt-12 text-center">
+            <h2 className="text-4xl font-bold relative z-10 mb-4 mt-12 text-center text-primary">
               For Drivers
             </h2>
             <ul className="space-y-4 text-[#868686] relative z-10 text-xl">
@@ -75,7 +75,7 @@ const WIIFM = () => {
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#d71515] rounded-full p-5 shadow-lg z-10">
               <FaUsers className="text-5xl text-white" />
             </div>
-            <h2 className="text-3xl font-bold relative z-10 mb-4 mt-12 text-center">
+            <h2 className="text-4xl font-bold relative z-10 mb-4 mt-12 text-center text-primary">
               For Riders
             </h2>
             <ul className="space-y-4 text-[#868686] relative z-10 text-xl">
@@ -112,9 +112,9 @@ const WIIFM = () => {
         className="opacity-15 bg-center"
       />
           </div>
-          <h3 className="text-3xl font-bold text-center mb-6 text-[#d71515]">
-            Common Benefits
-          </h3>
+          <h2 className="text-4xl font-bold  mb-6 text-center text-primary">
+          Common Benefits
+          </h2>
           <ul className="space-y-6 text-[#868686] text-xl">
             <li className="flex  space-x-3">
               <FaUserShield className="text-2xl w-8 mr-3 text-[#d71515] shrink-0" />

@@ -26,7 +26,7 @@ const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-center p-4"
+      className="fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-center p-4 text-primary"
       onClick={onClose}
     >
       <motion.div
@@ -47,7 +47,7 @@ const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
             className="w-full h-20 object-cover rounded-t-lg z-10"
           />
 
-          <h2 className="text-2xl font-bold text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+          <h2 className="md:text-3xl text-2xl font-bold text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
             {title}
           </h2>
         </div>
@@ -66,7 +66,7 @@ const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
                 />
 
                 <div className="flex-1">
-                  <h3 className="lg:text-xl text-lg font-semibold mt-2">{subTrip.type}</h3>
+                  <h3 className=" lg:text-3xl md:text-2xl text-xl font-semibold mt-2">{subTrip.type}</h3>
                   <p className="lg:text-lg text-md text-gray-600 mt-2">
                     {subTrip.description}
                   </p>

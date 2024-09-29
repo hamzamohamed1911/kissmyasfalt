@@ -75,7 +75,7 @@ const FoundersMessages = () => {
             <div className="xl:h-[400px] lg:h-[350px] md:h-[280px] h-auto w-auto bg-white p-6 rounded-lg mx-2 cursor-pointer shadow-md">
               <div className="flex items-center mb-3">
                 <div className="mr-3">{card.icon}</div>
-                <h3 className="lg:text-lg  text-md font-bold">{card.title}</h3>
+                <h3 className="lg:text-lg  text-md font-bold text-primary">{card.title}</h3>
               </div>
               <p className="xl:text-lg lg:text-md md:text-sm text-sm text-[#868686] text-left">
                 {card.description}

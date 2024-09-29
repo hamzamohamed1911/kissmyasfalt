@@ -10,7 +10,7 @@ const Accordion = ({ title, icon, children }) => {
   };
 
   return (
-    <div className="bg-white lg:p-6 p-4 mb-4 rounded-lg shadow-md text-[#d71515]">
+    <div className="bg-white lg:p-6 p-4 mb-4 rounded-lg shadow-md text-[#d71515] text-lg">
       <h2
         className="md:text-3xl text-lg font-bold flex items-center cursor-pointer mb-4"
         onClick={toggleAccordion}
@@ -23,8 +23,8 @@ const Accordion = ({ title, icon, children }) => {
         />
       </h2>
       <div
-        className={`overflow-hidden transition-all duration-500 ${
-          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        className={` transition-all duration-500 ${
+          isOpen ? "max-h-screen opacity-100 overflow-hidden" : "max-h-0 opacity-0"
         }`}
       >
         <div className="text-gray-700 pt-2">{children}</div>

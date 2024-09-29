@@ -10,7 +10,7 @@ import WIIFM from "../_components/WIIFM";
 
 export default function Home() {
   return (
-    <main>
+    <main className="font-forte font-light">
       <Hero />
       <AboutUs />
       <Constitution />

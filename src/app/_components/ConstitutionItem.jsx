@@ -28,7 +28,7 @@ const ConstitutionItem = () => {
               <h3 className="text-xl font-semibold text-[#d71515]">
                 {amendment.title}
               </h3>
-              <p className="text-lg text-gray-700">{amendment.description}</p>
+              <p className="text-lg text-primary">{amendment.description}</p>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ const Founders = () => (
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
         
         <div className="lg:col-span-2 col-span-1">
-          <h2 className="text-5xl text-[#d71515] font-bold mb-6 text-start">
+          <h2 className="lg:text-5xl text-4xl text-[#d71515] font-bold mb-6 text-start">
           Founders Messages:
           </h2>
           <p className="text-xl leading-relaxed mb-6 text-[#868686]">
@@ -17,11 +17,11 @@ const Founders = () => (
             for joining us in this transformative journey. We are a community
             committed to fairness, transparency, and empowerment.
           </p>
-          <p className="text-lg text-center my-6">
+          <p className="text-lg text-center my-6 text-primary">
             Together, we are redefining rideshare. Thank you for being part of
             the revolution With gratitude and determination.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-4 text-primary">
             <div className="text-center rounded-full space-y-2 text-md">
               <Image
                 className="rounded-full  w-28 border-[#d71515] border-r-4 border-b-8 bg-cover mx-auto"

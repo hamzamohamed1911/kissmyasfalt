@@ -8,12 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'primary': '#3C3B6E',
+        'Secondary': '#B22234',
+        "tertiary" : '#d71515'
+     
+      },
+      fontWeight: {
+        light: 300, 
       },
       lineHeight: {
         'extra-loose': '2.5',  
         'super-loose': '3', 
+      },
+      fontFamily: {
+        forte: ['Forte', 'sans-serif'], 
       },
     },
   },
