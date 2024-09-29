@@ -11,6 +11,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      lineHeight: {
+        'extra-loose': '2.5',  
+        'super-loose': '3', 
+      },
     },
   },
   plugins: [],
