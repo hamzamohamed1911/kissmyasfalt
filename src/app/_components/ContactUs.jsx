@@ -7,7 +7,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import Form from "./Form";
 
 const ContactUs = () => (
-  <section id="contact-us" className="w-full bg-[#f0ebe5]  h-auto py-16">
+  <section id="contact-us" className="w-full bg-[#f0ebe5]  h-full py-16">
     <div className="container mx-auto p-6 md:p-2 md:px-6">
       <div className="text-center md:mb-16 mb-10">
         <h2 className="md:text-5xl text-3xl font-bold text-[#d71515]">
@@ -38,7 +38,7 @@ const ContactUs = () => (
                 size={50}
               />
               <strong className="text-3xl text-primary block">Email:</strong>
-              <p className="mt-1 text-xl">support@example.com</p>
+              <p className="mt-1 text-xl">shebl.shady@gmail.com</p>
             </div>
 
       

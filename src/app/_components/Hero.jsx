@@ -5,10 +5,10 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section id="/" className=" bg-[#f0ebe5] h-full w-full md:px-0 px-4 ">
-      <div className="flex lg:flex-row items-center justify-between container  w-full  pt-20 lg:h-[110vh] h-auto text-primary">
+      <div className="flex lg:flex-row items-center justify-between container  w-full  pt-20 lg:h-[110vh] md:h-[100vh] h-auto text-primary">
         {/* Text and Buttons Section */}
         <div className="lg:w-1/2 mb-8 ">
-          <div className="lg:text-7xl md:text-6xl sm:text-6xl text-5xl font-extrabold 	 text-center lg:text-left">
+          <div className="lg:text-7xl md:text-6xl  text-5xl font-extrabold 	 text-center lg:text-left">
             <p className="lg:mb-4 mb-0 leading-tight">
               Adventures with Kiss My
               <span className="text-Secondary bg-transparent "> Asfalt</span>
@@ -16,7 +16,7 @@ const Hero = () => {
           </div>
 
           <div className="py-6 rounded-lg text-center lg:text-left mb-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-relaxed">
               Breaking the Chains of Rideshare Exploitation
             </h2>
             <p className="text-center lg:text-left text-base md:text-lg lg:text-xl max-w-xl leading-relaxed mx-auto lg:mx-0">
