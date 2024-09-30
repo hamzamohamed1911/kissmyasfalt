@@ -32,7 +32,7 @@ const WIIFM = () => {
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#d71515] rounded-full p-5 shadow-lg z-10">
               <FaCar className="text-5xl text-white" />
             </div>
-            <h2 className="text-3xl font-bold relative z-10 mb-4 mt-8 text-center text-primary">
+            <h2 className="text-3xl font-bold relative z-10 mb-4 mt-12 text-center text-primary">
               For Drivers
             </h2>
             <ul className="space-y-4 text-[#868686] relative z-10 lg:text-xl text-lg">
@@ -73,7 +73,7 @@ const WIIFM = () => {
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#d71515] rounded-full p-5 shadow-lg z-10">
               <FaUsers className="text-5xl text-white" />
             </div>
-            <h2 className="text-3xl font-bold relative z-10 mb-4 mt-8 text-center text-primary">
+            <h2 className="text-3xl font-bold relative z-10 mb-4 mt-12 text-center text-primary">
               For Riders
             </h2>
             <ul className="space-y-4 text-[#868686] relative z-10 lg:text-xl text-lg">
