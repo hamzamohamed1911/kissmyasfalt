@@ -51,10 +51,11 @@ export default function MobileMenu() {
         {/*menu list*/}
       </button>
       {/* Overlay to close menu */}
+      {isOpen && <div className="fixed inset-0 " onClick={closeMenu}></div>}
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-[70px] inset-x-0 z-50 shadow-md transition-opacity duration-300 text-[#868686] bg-[#f0ebe5] py-5 ${
+        className={`absolute top-[70px] inset-x-0 z-50 shadow-md transition-opacity duration-300 text-[#868686] bg-[#fbf9f5] py-5 ${
           isOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"

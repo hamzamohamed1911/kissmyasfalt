@@ -9,7 +9,7 @@ const Founders = () => (
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
         
         <div className="lg:col-span-2 col-span-1">
-          <h2 className="lg:text-5xl text-4xl text-[#d71515] font-bold mb-6 text-start font-urban">
+          <h2 className="md:text-5xl text-3xl text-[#d71515] font-bold mb-6 text-start font-urban left-3">
           Founders Messages:
           </h2>
           <p className="text-xl leading-relaxed mb-6 text-[#868686]">
