@@ -14,7 +14,7 @@ const SafetyGuidelines = () => {
   return (
     <section className="w-full h-auto  py-12 px-4 text-[#d71515] ">
       <div className="container mx-auto ">
-        <h1 className="text-4xl font-bold text-center mb-8">
+        <h1 className="md:text-5xl text-3xl font-bold text-center mb-8 font-urban">
           Safety Guidelines
         </h1>
 

@@ -29,15 +29,14 @@ const HeroImages = ({ heroImg1, heroImg2 }) => {
         <Image
           src={heroImg1}
           alt="Comic Book Image 1"
-          className="w-full h-full max-w-lg lg:max-w-2xl rounded-sm shadow-lg rotate-6 absolute z-10 border-white border-[12px] shadow-[#d71515]"
+          className="lg:w-[480px] md:w-auto h-auto rounded-sm shadow-lg rotate-6 absolute z-10 border-white border-[12px] shadow-[#d71515]"
           priority
         />
         
-        {/* Second Image with blue shadow */}
         <Image
           src={heroImg2}
           alt="Comic Book Image 2"
-          className="w-full h-full max-w-lg lg:max-w-2xl rounded-sm shadow-lg border-white border-[12px] shadow-[#0A3161]"
+          className="lg:w-[480px] md:w-auto  rounded-sm shadow-lg border-white border-[12px] shadow-[#0A3161]"
           priority
         />
       </motion.div>

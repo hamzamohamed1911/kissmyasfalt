@@ -4,12 +4,12 @@ import { founder1, founder2 } from "../../../public";
 import FoundersMessages from "./FoundersMessages";
 
 const Founders = () => (
-  <section id="Founders" className="w-full md:px-0 px-4 py-20 bg-[#f0ebe5]">
+  <section id="Founders" className="w-full md:px-0 px-4 py-20 ">
     <div className="container w-full">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
         
         <div className="lg:col-span-2 col-span-1">
-          <h2 className="lg:text-5xl text-4xl text-[#d71515] font-bold mb-6 text-start">
+          <h2 className="lg:text-5xl text-4xl text-[#d71515] font-bold mb-6 text-start font-urban">
           Founders Messages:
           </h2>
           <p className="text-xl leading-relaxed mb-6 text-[#868686]">

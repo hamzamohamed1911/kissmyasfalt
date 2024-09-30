@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={` text-black lg:px-14 px-4 fixed w-full z-20 transition-all duration-300 bg-[#f0ebe5]  ${
+      className={` text-black md:px-14 px-4 fixed w-full z-20 transition-all duration-300 bg-[#fbf9f5] font-urban ${
         scrolling ? "shadow-md " : ""
       }`}
     >

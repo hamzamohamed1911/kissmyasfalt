@@ -27,7 +27,7 @@ export default function MobileMenu() {
   };
 
   return (
-    <div className="lg:hidden bg-[#f0ebe5]">
+    <div className="lg:hidden bg-[#fbf9f5]">
       <button
         className="w-10 h-8 flex flex-col justify-between z-50 relative"
         onClick={() => setIsOpen((prev) => !prev)}

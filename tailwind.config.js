@@ -21,7 +21,8 @@ module.exports = {
         'super-loose': '3', 
       },
       fontFamily: {
-        forte: ['Forte', 'sans-serif'], 
+        urban: ['Urban Storm', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],    
       },
     },
   },

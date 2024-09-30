@@ -72,12 +72,12 @@ const FoundersMessages = () => {
       <Slider {...settings}>
         {cards.map((card, index) => (
           <div key={index} className="px-3 flex justify-center items-center">
-            <div className="xl:h-[400px] lg:h-[350px] md:h-[280px] h-auto w-auto bg-white p-6 rounded-lg mx-2 cursor-pointer shadow-md">
+            <div className="xl:h-[400px] lg:h-[350px] md:h-[300px] h-auto w-auto bg-white p-6 rounded-lg mx-2 cursor-pointer shadow-md overflow-hidden">
               <div className="flex items-center mb-3">
                 <div className="mr-3">{card.icon}</div>
                 <h3 className="lg:text-lg  text-md font-bold text-primary">{card.title}</h3>
               </div>
-              <p className="xl:text-lg lg:text-md md:text-sm text-sm text-[#868686] text-left">
+              <p className="xl:text-lg text-md  text-[#868686] text-left">
                 {card.description}
               </p>
             </div>
