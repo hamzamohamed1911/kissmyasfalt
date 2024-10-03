@@ -1,5 +1,5 @@
 import { AiOutlineCar, AiOutlineDollarCircle, AiOutlineSafety, AiOutlineStop, AiOutlineUser } from "react-icons/ai";
-import { BigAsfalt, BrokeAsfalt, ClassicAsflat, FancyAsfalt, HairyAsfalt, Image1, Image2, Image3, Image4, Image5, smartasphalt } from "../../../public";
+import { badaAssfalt, BigAsfalt, BrokeAsfalt, ClassicAsflat, FancyAsfalt, firstClass, HairyAsfalt, Image1, Image2, Image3, Image4, Image5, nakedAsfalt, smartasphalt } from "../../../public";
 
 export const TripsItemArr = [
   {
@@ -58,19 +58,19 @@ export const TripsItemArr = [
         type: "naked asfalt",
         description: "wanna go around in a convertible, were literally sky is the limit.. why not.",
         price:200,
-        subTripImage: Image1 
+        subTripImage: nakedAsfalt 
       },
       {
-        type: "flying asfalt",
+        type: "Bad asfalt",
         description: "sports cars for one rider, why take a comfortable ride whn you can squeeze into a seat that will take your breath away.",
         price:210,
-        subTripImage: Image2 
+        subTripImage: badaAssfalt 
       },
       {
         type: "First Class Asfalt",
         description: "Luxury at its finest. The most exclusive and premium exotic rides available.",
         price:220,
-        subTripImage: Image3 
+        subTripImage: firstClass 
       }
     ]
   }

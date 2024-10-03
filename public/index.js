@@ -16,13 +16,19 @@ import commonImg from "./common.png"
 import footerIcon from "./footerIcon.png"
 import TripBg from "./Group.svg"
 import Logo from "./logo.svg"
-import BrokeAsfalt from "./BrokeAsfalt.jpeg"
-import smartasphalt from "./smartasphalt.jpeg"
-import FancyAsfalt from "./FancyAsfalt.jpeg"
-import HairyAsfalt from "./HairyAsfalt.jpeg"
-import ClassicAsflat from "./ClassicAsflat.jpeg"
-import BigAsfalt from "./BigAsfalt.jpeg"
+import BrokeAsfalt from "./BrokeAsfalt.jpg"
+import smartasphalt from "./smartasphalt.jpg"
+import FancyAsfalt from "./FancyAsfalt.jpg"
+import HairyAsfalt from "./HairyAsfalt.jpg"
+import ClassicAsflat from "./ClassicAsflat.jpg"
+import BigAsfalt from "./BigAsfalt.jpg"
+import nakedAsfalt from "./NakedAsfalt.jpg"
+import firstClass from "./FirstClassAsfalt.jpg"
+import badaAssfalt from "./BadAsfalt.jpg"
 export{
+    badaAssfalt,
+    nakedAsfalt,
+    firstClass,
     heroImg1,
     heroImg2,
     aboutUSImg,
