@@ -32,7 +32,7 @@ const TripsItem = () => {
   return (
     <div>
       {/* Gallery Grid */}
-      <div className="grid xl:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-6 justify-center">
+      <div className="flex gap-6 justify-center flex-wrap">
         {TripsItemArr.map((trip, index) => (
           <motion.div
             key={index}
@@ -62,7 +62,7 @@ const TripsItem = () => {
               </motion.div>
             </div>
             <div className="flex items-center justify-between p-6 text-[#d71515]">
-              <h3 className="font-semibold text-start lg:text-3xl text-2xl">
+              <h3 className="font-semibold text-start lg:text-4xl text-3xl">
                 {trip.title}
               </h3>
               <BsArrowUpRightCircle

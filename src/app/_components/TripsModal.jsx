@@ -57,12 +57,12 @@ const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
             {subTrips.map((subTrip, index) => (
               <div
                 key={index}
-                className="border border-gray-300 rounded-lg p-4 bg-white shadow-md flex flex-col md:flex-row gap-4"
+                className="border border-gray-300 rounded-lg p-4 bg-white shadow-md flex flex-row gap-4"
               >
                 <Image
                   src={subTrip.subTripImage}
                   alt={subTrip.type}
-                  className="w-full md:w-1/3 lg:h-48 md:h-40 h-32 object-cover rounded-lg"
+                  className="w-1/3 lg:h-48 md:h-40 h-36 object-cover rounded-lg"
                 />
 
                 <div className="flex-1">
@@ -70,7 +70,7 @@ const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
                   <p className="lg:text-lg text-md text-gray-600 mt-2">
                     {subTrip.description}
                   </p>
-                  <p className="lg:text-xl text-lg mt-2">
+                  <p className="lg:text-xl text-lg mt-4 text-end">
                     Estimated cost: {subTrip.price}$
                   </p>
                 </div>
