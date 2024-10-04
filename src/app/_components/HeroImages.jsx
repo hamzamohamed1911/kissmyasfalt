@@ -7,8 +7,8 @@ const HeroImages = ({ heroImg1, heroImg2 }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
-    const x = (window.innerWidth / 2 - e.clientX) / 20;
-    const y = (window.innerHeight / 2 - e.clientY) / 20;
+    const x = (window.innerWidth / 2 - e.clientX) / 15;
+    const y = (window.innerHeight / 2 - e.clientY) / 15;
     setPosition({ x, y });
   };
 
@@ -17,6 +17,7 @@ const HeroImages = ({ heroImg1, heroImg2 }) => {
       className="relative hidden lg:w-1/2 lg:flex justify-end items-center h-full"
       onMouseMove={handleMouseMove}
     >
+
       <motion.div
         className="absolute grayscale"
         animate={{
@@ -25,6 +26,7 @@ const HeroImages = ({ heroImg1, heroImg2 }) => {
         }}
         transition={{ type: "spring", stiffness: 150, damping: 15 }}
       >
+        
         {/* First Image with red shadow */}
         <Image
           src={heroImg1}

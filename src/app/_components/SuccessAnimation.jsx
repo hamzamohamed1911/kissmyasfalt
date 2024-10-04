@@ -58,9 +58,14 @@ const SuccessAnimation = () => {
         transition={{ duration: 0.5, delay: 1.8 }}
         className="mt-10"
       >
-        <Link href="/" className="bg-[#d71515] text-white px-6 py-3 rounded-md text-lg font-semibold comic-font hover:bg-[#a31212] transition duration-300">
-          Back to Home
-        </Link>
+<Link href="/" passHref>
+  <div className="text-[#d71515] font-urban py-3 rounded-md text-3xl font-semibold comic-font transition duration-300 ease-in-out transform hover:rotate-3 hover:scale-110">
+    Back to Home
+  </div>
+</Link>
+
+
+
       </motion.div>
     </motion.div>
   );

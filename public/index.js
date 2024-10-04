@@ -1,5 +1,6 @@
 import heroImg1 from "./Leonardo.jpg"
-import heroImg2 from "./Leonardo.jpg"
+import heroImg2 from "./Leonardo2.jpg"
+import bannerIcon from "./bannericon.png"
 import aboutUSImg from "./Leonardo_Lightning.jpg"
 import appStore from "./app-store-logo.svg"
 import googlePlay from "./google-play.svg"
@@ -10,9 +11,9 @@ import Image2 from "./popular2.png"
 import Image3 from "./popular3.png"
 import Image4 from "./popular4.png"
 import Image5 from "./comic2.png"
-import rider from "./rider.png"
-import driver from "./driver.png"
-import commonImg from "./common.png"
+import rider from "./Leonardo_Lightning_XL_guy.jpg"
+import driver from "./Leonardo_Lightning_XL_blue_car.jpg"
+import commonImg from "./common.jpg"
 import footerIcon from "./footerIcon.png"
 import TripBg from "./Group.svg"
 import Logo from "./logo.svg"
@@ -28,6 +29,8 @@ import badaAssfalt from "./BadAsfalt.jpg"
 import specialityrides from "./specialityrides.PNG"
 import standaredrides from "./standaredrides.PNG"
 import exoticrides from "./exoticrides.PNG"
+import LodaerIcon from "./loader.gif"
+import successImage from "./successfulImage.jpg"
 export{
     exoticrides,
     standaredrides,
@@ -58,6 +61,9 @@ export{
     FancyAsfalt,
     HairyAsfalt,
     ClassicAsflat,
-    BigAsfalt
+    BigAsfalt,
+    bannerIcon,
+    LodaerIcon,
+    successImage
 
 }

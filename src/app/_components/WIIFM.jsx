@@ -21,7 +21,7 @@ const WIIFM = () => {
           <div className="relative bg-white rounded-lg md:p-8 p-3  h-full text-[#d71515] shadow-lg flex flex-col  transition duration-500 ease-in-out grayscale-0 hover:grayscale">
             <div className="absolute inset-0 rounded-lg overflow-hidden">
               <Image
-                src={rider}
+                src={driver}
                 alt="Drivers Background"
                 fill
                 style={{ objectFit: "cover" }}
@@ -63,7 +63,7 @@ const WIIFM = () => {
           <div className="relative bg-white rounded-lg md:p-8 p-3  h-full text-[#d71515] shadow-lg flex flex-col  transition duration-500 ease-in-out grayscale-0 hover:grayscale">
             <div className="absolute inset-0 rounded-lg overflow-hidden ">
               <Image
-                src={driver}
+                src={rider}
                 alt="Riders Background"
                 fill
                 style={{ objectFit: "cover" }}
