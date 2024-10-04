@@ -25,7 +25,13 @@ import BigAsfalt from "./BigAsfalt.jpg"
 import nakedAsfalt from "./NakedAsfalt.jpg"
 import firstClass from "./FirstClassAsfalt.jpg"
 import badaAssfalt from "./BadAsfalt.jpg"
+import specialityrides from "./specialityrides.PNG"
+import standaredrides from "./standaredrides.PNG"
+import exoticrides from "./exoticrides.PNG"
 export{
+    exoticrides,
+    standaredrides,
+    specialityrides,
     badaAssfalt,
     nakedAsfalt,
     firstClass,

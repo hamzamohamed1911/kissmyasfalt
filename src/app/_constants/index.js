@@ -1,10 +1,10 @@
 import { AiOutlineCar, AiOutlineDollarCircle, AiOutlineSafety, AiOutlineStop, AiOutlineUser } from "react-icons/ai";
-import { badaAssfalt, BigAsfalt, BrokeAsfalt, ClassicAsflat, FancyAsfalt, firstClass, HairyAsfalt, Image1, Image2, Image3, Image4, Image5, nakedAsfalt, smartasphalt } from "../../../public";
+import { badaAssfalt, BigAsfalt, BrokeAsfalt, ClassicAsflat, exoticrides, FancyAsfalt, firstClass, HairyAsfalt, Image1, Image2, Image3, Image4, Image5, nakedAsfalt, smartasphalt, specialityrides, standaredrides } from "../../../public";
 
 export const TripsItemArr = [
   {
     title: "standard",
-    coverImage: Image1,
+    coverImage: standaredrides,
     subTrips: [
       {
         type: "broke asphalt",
@@ -28,7 +28,7 @@ export const TripsItemArr = [
   },
   {
     title: "specialty",
-    coverImage: Image2,
+    coverImage: specialityrides,
     subTrips: [
       {
         type: "Hairy asfalt",
@@ -52,7 +52,7 @@ export const TripsItemArr = [
   },
   {
     title: "exotic",
-    coverImage: Image3,
+    coverImage: exoticrides,
     subTrips: [
       {
         type: "naked asfalt",
@@ -74,10 +74,7 @@ export const TripsItemArr = [
       }
     ]
   }
-];
-
-
-
+  ];
 export const links = [
     { href: '/', text: 'Home' },
     { href: '#about', text: 'About' },
@@ -86,9 +83,7 @@ export const links = [
     { href: '#contact-us', text: 'Contact' },
 
   ];
-
-
-  export const cards = [
+ export const cards = [
     {
       title: "Transparency and Fair Compensation",
       description:
@@ -120,7 +115,7 @@ export const links = [
       icon: <AiOutlineStop size={40} className="text-[#d71515]" />,
     },
   ];
-  export const amendments = [
+ export const amendments = [
     {
       title: "Amendment I: Empowerment of Users",
       description:
