@@ -52,7 +52,7 @@ const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
           </h2>
         </div>
 
-        <div className="p-4">
+        <div className="md:p-4 p-2">
           <div className="space-y-6">
             {subTrips.map((subTrip, index) => (
               <div
@@ -66,21 +66,20 @@ const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
                     className="lg:h-52 md:h-48 h-40 object-cover rounded-lg"
                   />
                 </div>
-              <div className="flex-1 col-span-4 flex flex-col justify-between">
-  <div>
-    <h3 className="lg:text-3xl md:text-2xl text-xl font-semibold md:mt-2 mt-1">
-      {subTrip.type}
-    </h3>
-    <p className="md:text-lg text-sm text-gray-600 md:mt-2 mt-1">
-      {subTrip.description}
-    </p>
-  </div>
+                <div className="flex-1 col-span-4 flex flex-col justify-between">
+                  <div>
+                    <h3 className="lg:text-3xl md:text-2xl text-xl font-semibold md:mt-2 mt-1">
+                      {subTrip.type}
+                    </h3>
+                    <p className="md:text-lg text-sm text-gray-600 md:mt-2 mt-1">
+                      {subTrip.description}
+                    </p>
+                  </div>
 
-  <p className="lg:text-xl md:text-lg text-md mt-2 text-end self-end">
-    Estimated cost: <strong>{subTrip.price}$</strong>
-  </p>
-</div>
-
+                  <p className="lg:text-xl md:text-lg text-md mt-2 text-end self-end">
+                    Estimated cost: <strong>{subTrip.price}$</strong>
+                  </p>
+                </div>
               </div>
             ))}
           </div>
