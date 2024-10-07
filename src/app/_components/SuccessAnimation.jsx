@@ -15,7 +15,7 @@ const SuccessAnimation = () => {
         damping: 20,
         duration: 0.5,
       }}
-      className="relative z-10 bg-white p-10 rounded-3xl shadow-2xl border-8 border-black text-center"
+      className="relative z-10 bg-white md:p-10 p-6 rounded-3xl shadow-2xl border-8 border-black text-center"
     >
       <motion.h1
         initial={{ opacity: 0, y: -100 }}
