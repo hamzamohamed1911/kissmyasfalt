@@ -9,7 +9,7 @@ const ConstitutionItem = () => {
       {amendments.map((amendment, index) => (
         <div
           key={index}
-          className="relative rounded-lg overflow-hidden shadow-md border-8 border-white flex flex-col items-center  bg-white h-[500px] group"
+          className="relative rounded-lg overflow-hidden shadow-md border-8 border-white flex flex-col items-center  bg-white h-[500px] w-[400px]  group"
         >
           <Image
             src={amendment.coverImage}
@@ -23,12 +23,12 @@ const ConstitutionItem = () => {
             </div>
           </div>
 
-          <div className="absolute inset-0 flex items-center justify-center bg-white opacity-0 transition-opacity duration-300 ease-in-out cursor-pointer group-hover:opacity-100">
-            <div className="p-4 text-center">
-              <h3 className="text-xl font-semibold text-[#d71515]">
+          <div className="absolute inset-0 flex justify-center bg-white opacity-0 transition-opacity duration-300 ease-in-out cursor-pointer group-hover:opacity-100">
+            <div className="p-4 text-center flex flex-col justify-evenly">
+              <h3 className="md:text-3xl text-xl font-semibold text-[#d71515]">
                 {amendment.title}
               </h3>
-              <p className="text-lg text-primary">{amendment.description}</p>
+              <p className="text-xl text-primary">{amendment.description}</p>
             </div>
           </div>
         </div>

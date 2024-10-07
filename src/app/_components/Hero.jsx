@@ -5,8 +5,10 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section id="/" className="  h-full w-full md:px-0 px-4   min-h-screen ">
-      <div className="flex lg:flex-row items-center justify-between container  w-full   pt-[90px] lg:h-[110vh] md:h-[100vh] h-auto text-primary">
-        <div className="lg:w-1/2 mb-8 w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-4 items-center  justify-between container  w-full   pt-[90px] lg:h-[110vh]  h-auto text-primary">
+                {/* Text Section */}
+
+        <div className="col-span-1  w-full ">
           <div className="xl:text-7xl lg:text-6xl md:text-6xl text-5xl font-extrabold  font-urban	 text-center lg:text-left">
             <p className="lg:mb-4 mb-0 leading-tight ">
               Adventures with   

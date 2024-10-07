@@ -14,12 +14,12 @@ const HeroImages = ({ heroImg1, heroImg2 }) => {
 
   return (
     <div
-      className="relative hidden lg:w-1/2 lg:flex justify-end items-center h-full"
+      className="relative  col-span-1 flex lg:justify-end justify-center items-center "
       onMouseMove={handleMouseMove}
     >
 
       <motion.div
-        className="absolute grayscale"
+        className=" grayscale"
         animate={{
           x: position.x,
           y: position.y,
@@ -31,14 +31,14 @@ const HeroImages = ({ heroImg1, heroImg2 }) => {
         <Image
           src={heroImg1}
           alt="Comic Book Image 1"
-          className="xl:w-[480px] lg:w-[560px] w-auto h-auto rounded-sm shadow-lg rotate-6 absolute z-10 border-white border-[12px] shadow-[#d71515]"
+          className="xl:w-[460px] lg:w-[560px] w-[340px] w-auto h-auto rounded-sm shadow-xl rotate-6 absolute z-10 border-white border-[12px] shadow-black"
           layout="intrinsic"
         />
         
         <Image
           src={heroImg2}
           alt="Comic Book Image 2"
-          className="xl:w-[480px] lg:w-[450px] w-auto  rounded-sm shadow-lg border-white border-[12px] shadow-[#0A3161]"
+          className="xl:w-[460px] lg:w-[450px] w-[340px]  rounded-sm shadow-lg border-white border-[12px] shadow-[#0A3161]"
           layout="intrinsic"
         />
       </motion.div>
