@@ -64,7 +64,6 @@ html, body {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 768px; 
     margin-left: auto;
     padding:0 10px;
     margin-right: auto;
