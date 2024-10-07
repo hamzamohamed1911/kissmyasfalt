@@ -33,11 +33,13 @@ const ContactUs = () => (
 
             {/* Email */}
             <div className="mb-3 text-center md:text-left">
-              <MdEmail
+            <div className="flex gap-3 items-center">
+            <MdEmail
                 className="text-[#d71515] mb-2 mx-auto md:mx-0"
-                size={50}
+                size={40}
               />
-              <strong className="text-3xl text-primary block">Email:</strong>
+              <strong className="text-3xl text-primary block">Email :</strong>
+            </div>
               <p className="mt-1 text-xl">shebl.shady@gmail.com</p>
             </div>
 
@@ -45,11 +47,13 @@ const ContactUs = () => (
 
             {/* Connect Section */}
             <div className="mb-3 text-center md:text-left">
-              <FaWifi
+            <div className="flex gap-3 items-center">
+            <FaWifi
                 className="text-[#d71515] mb-2 mx-auto md:mx-0"
-                size={50}
+                size={40}
               />
-              <strong className="text-3xl text-primary block">Connect:</strong>
+              <strong className="text-3xl text-primary block">Connect :</strong>
+            </div>
               <div className="flex justify-center md:justify-start gap-3 text-3xl mt-2">
                 <FaFacebookF className="text-[#868686] hover:text-[#d71515] cursor-pointer" />
                 <FaInstagram className="text-[#868686] hover:text-[#d71515] cursor-pointer" />
