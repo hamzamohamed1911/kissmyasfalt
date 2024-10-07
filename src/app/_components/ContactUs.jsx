@@ -35,7 +35,7 @@ const ContactUs = () => (
             <div className="mb-3 text-center md:text-left col-span-1">
             <div className="flex gap-3 items-center">
             <MdEmail
-                className="text-[#d71515] mb-2 "
+                className="text-[#d71515] mb-2 غ"
                 size={40}
               />
               <strong className="text-3xl text-primary block">Email :</strong>
