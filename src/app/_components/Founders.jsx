@@ -30,7 +30,7 @@ const Founders = () => (
                 src={founder1}
               />
               <p>
-                <strong>Shady Shebl</strong>
+                <strong>Shady </strong>
               </p>
               <p>Founder & Creative Director</p>
             </div>
@@ -42,7 +42,7 @@ const Founders = () => (
                 src={founder2}
               />
               <p>
-                <strong>Mo Shalaby</strong>
+                <strong>MOE</strong>
               </p>
               <p>Co-founder & CEO</p>
             </div>
