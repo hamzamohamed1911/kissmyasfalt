@@ -1,5 +1,5 @@
 import { AiOutlineCar, AiOutlineDollarCircle, AiOutlineSafety, AiOutlineStop, AiOutlineUser } from "react-icons/ai";
-import { badaAssfalt, BigAsfalt, BrokeAsfalt, ClassicAsflat, exoticrides, FancyAsfalt, firstClass, HairyAsfalt, Image1, Image2, Image3, Image4, Image5, nakedAsfalt, smartasphalt, specialityrides, standaredrides } from "../../../public";
+import { applicationImg1, applicationImg2, applicationImg3, applicationImg4, applicationImg5, applicationImg6, applicationImg7, applicationImg8, applicationImg9, badaAssfalt, BigAsfalt, BrokeAsfalt, ClassicAsflat, exoticrides, FancyAsfalt, firstClass, HairyAsfalt, Image1, Image2, Image3, Image4, Image5, nakedAsfalt, smartasphalt, specialityrides, standaredrides } from "../../../public";
 
 export const TripsItemArr = [
   {
@@ -150,4 +150,15 @@ export const links = [
         "Surge pricing shall never be implemented. All users, regardless of time or demand, shall have access to fair and consistent pricing. The platform commits to maintaining a stable cost structure, ensuring that no rider is ever overcharged due to fluctuating demand.",
         coverImage: Image5, 
     },
+  ];
+  export const mobileScreenshots = [
+    { Imgsrc: applicationImg1, alt: 'Open Dispute' },
+    { Imgsrc: applicationImg2, alt: 'Trip Preferences for Rider' },
+    { Imgsrc: applicationImg3, alt: 'Disputes' },
+    { Imgsrc: applicationImg4, alt: 'Scheduled Trips for Driver' },
+    { Imgsrc: applicationImg5, alt: 'My Disputes' },
+    { Imgsrc: applicationImg6, alt: 'Rewards for Drivers' },
+    { Imgsrc: applicationImg7, alt: 'Rewards for Winner Driver' },
+    { Imgsrc: applicationImg8, alt: 'Trip Preferences for Rider' },
+    { Imgsrc: applicationImg9, alt: 'Open Dispute 2' },
   ];

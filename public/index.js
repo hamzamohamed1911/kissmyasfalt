@@ -31,6 +31,23 @@ import standaredrides from "./standaredrides.PNG"
 import exoticrides from "./exoticrides.PNG"
 import LodaerIcon from "./loader.gif"
 import successImage from "./successfulImage.jpg"
+import applicationImg1 from "./Open-Dispute.png"
+import applicationImg2 from "./Trip-Preferences---rider.png"
+import applicationImg3 from "./Disputes.png"
+import applicationImg4 from "./Scheduled-Trips---driver.png"
+import applicationImg5 from "./MyDisputes.png"
+import applicationImg6 from "./Rewards---Drivers.png"
+import applicationImg7 from "./Rewards---Winner-Driver.png"
+import applicationImg8 from "./Trip-Preferences---rider.png"
+import applicationImg9 from "./Open-Dispute-2.png"
+
+
+
+
+
+
+
+
 export{
     exoticrides,
     standaredrides,
@@ -64,6 +81,15 @@ export{
     BigAsfalt,
     bannerIcon,
     LodaerIcon,
-    successImage
+    successImage,
+    applicationImg1,
+    applicationImg2,
+    applicationImg3,
+    applicationImg4,
+    applicationImg5,
+    applicationImg6,
+    applicationImg7,
+    applicationImg8,
+    applicationImg9
 
 }
