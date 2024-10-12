@@ -13,14 +13,22 @@ const MobileScreenshotSlider = () => {
       effect={"coverflow"}
       grabCursor={true}
       centeredSlides={true}
-      slidesPerView={3} 
-      spaceBetween={30}  
+      spaceBetween={30}
       coverflowEffect={{
         rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
         slideShadows: true,
+      }}
+      pagination={true}
+      breakpoints={{
+        640: {
+          slidesPerView: 2, 
+        },
+        768: {
+          slidesPerView: 3, 
+        },
       }}
       modules={[EffectCoverflow, Pagination]}
       className="mySwiper"

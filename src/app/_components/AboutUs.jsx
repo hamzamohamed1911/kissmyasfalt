@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <section
       id="about"
-      className=" w-full md:px-0 px-4   pt-10  text-primary  h-auto "
+      className=" w-full md:px-0 px-4   py-10  text-primary  h-auto "
     >
       <div className=" md:flex flex-col lg:flex-row items-center justify-between  container">
         {/* Image Section */}

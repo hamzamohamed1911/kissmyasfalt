@@ -6,16 +6,14 @@ const BackgroundVideo = () => {
   useEffect(() => {
     const handleInteraction = () => {
       if (videoRef.current) {
-        videoRef.current.muted = false; // Unmute the video after interaction
-        videoRef.current.play(); // Ensure the video is playing with sound
+        videoRef.current.muted = false; 
+        videoRef.current.play(); 
       }
     };
 
-    // Add an event listener to listen for any interaction (e.g., click)
     window.addEventListener('click', handleInteraction);
 
     return () => {
-      // Cleanup the event listener
       window.removeEventListener('click', handleInteraction);
     };
   }, []);
@@ -27,7 +25,7 @@ const BackgroundVideo = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
         loop
-        muted // Starts muted
+        muted 
         preload="auto"
       >
         <source src="/videos/kissmyasphalt.mp4" type="video/mp4" />
