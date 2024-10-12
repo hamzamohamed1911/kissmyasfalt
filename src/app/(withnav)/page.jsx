@@ -6,7 +6,7 @@ import Founders from "../_components/Founders";
 import Hero from "../_components/Hero";
 import SafetyGuidelines from "../_components/SafetyGuidelines";
 import WIIFM from "../_components/WIIFM";
-import Features from "../_components/features";
+import Features from "../_components/Features";
 
 
 export default function Home() {
