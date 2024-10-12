@@ -21,24 +21,24 @@ const Founders = () => (
             Together, we are redefining rideshare. Thank you for being part of
             the revolution With gratitude and determination.
           </p>
-          <div className="flex justify-center gap-4 text-primary">
-            <div className="text-center rounded-full space-y-2 text-md">
+          <div className="flex justify-center gap-6 text-primary">
+            <div className="text-center space-y-2 rounded-full text-md">
               <Image
-                className="rounded-full  w-28 border-[#d71515] border-r-4 border-b-8 bg-cover mx-auto"
+                className="rounded-full w-36  h-36 border-[#d71515] border-r-4 border-b-8 object-cover		"
                 priority
-                alt="image of Mr. Shady Shebl"
+                alt="image of Mr. Shady "
                 src={founder1}
               />
               <p>
-                <strong>Shady </strong>
+                <strong>Shady</strong>
               </p>
-              <p>Founder & Creative Director</p>
+              <p>Founder &  Director</p>
             </div>
             <div className="text-center space-y-2 rounded-full text-md">
               <Image
-                className="rounded-full w-28 border-[#d71515] border-r-4 border-b-8 bg-cover mx-auto"
+                className="rounded-full w-36  h-36 border-[#d71515] border-r-4 border-b-8 object-cover		"
                 priority
-                alt="image of Mr. Mo Shalaby"
+                alt="image of Mr. Mo "
                 src={founder2}
               />
               <p>
