@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import BackgroundVideo from "./BackgroundVideo";
 
 const HeroImages = ({ heroImg1, heroImg2 }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -14,31 +15,27 @@ const HeroImages = ({ heroImg1, heroImg2 }) => {
 
   return (
     <div
-      className="relative  col-span-1 flex lg:justify-end justify-center items-center "
+      className="relative col-span-1 flex lg:justify-end justify-center items-center"
       onMouseMove={handleMouseMove}
     >
-
       <motion.div
-        className=" grayscale"
+        className="grayscale"
         animate={{
           x: position.x,
           y: position.y,
         }}
         transition={{ type: "spring", stiffness: 150, damping: 15 }}
       >
-        
-        {/* First Image with red shadow */}
-        <Image
-          src={heroImg1}
-          alt="Comic Book Image 1"
-          className="xl:w-[460px] lg:w-[560px] w-[340px] w-auto h-auto rounded-sm shadow-xl rotate-6 absolute z-10 border-white border-[12px] shadow-black"
-          layout="intrinsic"
-        />
-        
+        <div
+          className="lg-[750px]  md:w-[430px] md:h-[730px] w-[300px]  h-[500px] rounded-sm shadow-xl rotate-6 absolute z-20 border-white border-[12px] shadow-black"
+        >
+          <BackgroundVideo />
+        </div>
+
         <Image
           src={heroImg2}
           alt="Comic Book Image 2"
-          className="xl:w-[460px] lg:w-[450px] w-[340px]  rounded-sm shadow-lg border-white border-[12px] shadow-[#0A3161]"
+          className=" lg-[750px]  md:w-[450px] md:h-auto w-[300px]  h-[500px] rounded-sm shadow-lg border-white border-[12px] shadow-[#0A3161]"
           layout="intrinsic"
         />
       </motion.div>
