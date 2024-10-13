@@ -7,6 +7,7 @@ import Hero from "../_components/Hero";
 import SafetyGuidelines from "../_components/SafetyGuidelines";
 import WIIFM from "../_components/WIIFM";
 import Features from "../_components/Features";
+import Mobileapplication from "../_components/Mobileapplication";
 
 
 export default function Home() {
@@ -14,10 +15,11 @@ export default function Home() {
     <main >
       <Hero />
       <AboutUs />
-      <Features/>
+      <Mobileapplication/>
       <Constitution />
       <WIIFM />
       <Founders />
+      <Features/>
       <Trips />
       <SafetyGuidelines/>
       <ContactUs />
