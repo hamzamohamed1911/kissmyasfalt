@@ -1,13 +1,11 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Driver from "./Driver";
 
 const Features = () => {
   const [activeTab, setActiveTab] = useState("driver");
-  const [driverResult, setDriverResult] = useState(null);
   const [riderResult, setRiderResult] = useState(null);
-  const [workType, setWorkType] = useState("");
-  const [rideTypeDriver, setRideTypeDriver] = useState("");
   const [rideTime, setRideTime] = useState("");
   const [mileage, setMileage] = useState("");
   const [rideTypeRider, setRideTypeRider] = useState("");
@@ -19,14 +17,7 @@ const Features = () => {
   };
 
   // Function to handle Driver calculation
-  const calculateDriver = () => {
-    if (workType && rideTypeDriver) {
-      const result = `You chose ${workType} work with ${rideTypeDriver} ride type.`;
-      setDriverResult(result);
-    } else {
-      setDriverResult("Please select both work type and ride type.");
-    }
-  };
+
 
   // Function to handle Rider calculation
   const calculateRider = () => {
@@ -79,61 +70,9 @@ const Features = () => {
         >
           {activeTab === "driver" ? (
             <div className="bg-[#fbf9f5] p-6 rounded-lg shadow-lg">
-              <h2 className="text-3xl font-bold mb-4 text-primary text-center">
-                Driver Features
-              </h2>
-
+          
               {/* Driver Form */}
-              <form>
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="mb-4 md:w-1/2">
-                    <label className="block text-lg font-medium text-gray-700 mb-2">
-                      Work Type
-                    </label>
-                    <select
-                      className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
-                      value={workType}
-                      onChange={(e) => setWorkType(e.target.value)}
-                    >
-                      <option value="" disabled>
-                        Select Work Type
-                      </option>
-                      <option value="full-time">Full-Time</option>
-                      <option value="part-time">Part-Time</option>
-                    </select>
-                  </div>
-
-                  <div className="mb-4 md:w-1/2">
-                    <label className="block text-lg font-medium text-gray-700 mb-2">
-                      Ride Type
-                    </label>
-                    <select
-                      className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
-                      value={rideTypeDriver}
-                      onChange={(e) => setRideTypeDriver(e.target.value)}
-                    >
-                      <option value="" disabled>
-                        Select Ride Type
-                      </option>
-                      <option value="standard">Standard</option>
-                      <option value="specialty">Specialty</option>
-                      <option value="exotic">Exotic</option>
-                    </select>
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  onClick={calculateDriver}
-                  className="bg-[#d71515] hover:bg-[#e24040] text-white px-6 py-3 rounded-md font-bold mt-4"
-                >
-                  Calculate
-                </button>
-                {driverResult && (
-                  <div className="mt-4 p-4 bg-gray-100 rounded-md">
-                    <p className="text-lg">{driverResult}</p>
-                  </div>
-                )}
-              </form>
+             <Driver/>
             </div>
           ) : (
             <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -159,7 +98,7 @@ const Features = () => {
 
                   <div className="mb-4 md:w-1/2">
                     <label className="block text-lg font-medium text-gray-700 mb-2">
-                      Mileage (in kilometers)
+                      Mileage
                     </label>
                     <input
                       type="number"
@@ -183,9 +122,15 @@ const Features = () => {
                     <option value="" disabled>
                       Select Ride Type
                     </option>
-                    <option value="standard">Standard</option>
-                    <option value="specialty">Specialty</option>
-                    <option value="exotic">Exotic</option>
+                    <option value="broke">broke asphalt</option>
+                      <option value="smart">smart asphalt</option>
+                      <option value="fancy">fancy asfalt</option>
+                      <option value="Hairy">Hairy asfalt</option>
+                      <option value="classic">classic asphalt</option>
+                      <option value="Big">Big asphalt</option>
+                      <option value="naked">naked asphalt</option>
+                      <option value="bad">bad asphalt</option>
+                      <option value="FirstClass">First Class asphalt</option>
                   </select>
                 </div>
                 <button

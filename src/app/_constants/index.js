@@ -61,7 +61,7 @@ export const TripsItemArr = [
         subTripImage: nakedAsfalt 
       },
       {
-        type: "Bad asfalt",
+        type: "naked asfalt",
         description: "sports cars for one rider, why take a comfortable ride whn you can squeeze into a seat that will take your breath away.",
         price:210,
         subTripImage: badaAssfalt 

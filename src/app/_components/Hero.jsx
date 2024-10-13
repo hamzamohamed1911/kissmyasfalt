@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="/" className="  h-full w-full md:px-0 px-4  md:my-4 my-20 ">
+    <section id="/" className="  h-full w-full md:px-0 px-4   my-20 ">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-4 items-center  justify-between container min-h-[calc(110vh-90px)]    w-full     text-primary">
                 {/* Text Section */}
 
         <div className="col-span-1  w-full ">
-          <div className="xl:text-7xl lg:text-6xl md:text-6xl text-5xl font-extrabold  font-urban	 text-center lg:text-left">
+          <div className="xl:text-6xl lg:text-5xl md:text-6xl sm:text-5xl text-4xl font-extrabold  font-urban	 text-center lg:text-left">
             <p className="lg:mb-4 mb-0 leading-tight ">
               Adventures with   
               <span className="text-Secondary bg-transparent block ">
@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
 
           <div className="py-6 rounded-lg text-center lg:text-left mb-6">
-            <h2 className=" lg:text-4xl md:text-3xl text-2xl font-bold mb-4 leading-relaxed font-urban">
+            <h2 className=" xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold mb-4 leading-relaxed font-urban">
               Breaking the Chains of Rideshare Exploitation
             </h2>
             <p className="text-center lg:text-left text-base md:text-lg lg:text-xl max-w-xl leading-relaxed mx-auto lg:mx-0">
