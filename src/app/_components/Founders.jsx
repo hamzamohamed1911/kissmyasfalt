@@ -22,7 +22,7 @@ const Founders = () => (
             the revolution With gratitude and determination.
           </p>
           <div className="flex justify-center gap-6 text-primary">
-            <div className="text-center space-y-2 rounded-full text-md">
+            <div className="text-center space-y-2 flex justify-center items-center flex-col rounded-full text-md">
               <Image
                 className="rounded-full w-36  h-36 border-[#d71515] border-r-4 border-b-8 object-cover		"
                 priority
@@ -32,7 +32,7 @@ const Founders = () => (
               <p>
                 <strong>Shady</strong>
               </p>
-              <p>Founder &  Director</p>
+              <p>Founder & Creative Director</p>
             </div>
             <div className="text-center space-y-2 rounded-full text-md">
               <Image

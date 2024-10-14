@@ -42,26 +42,26 @@ const AboutUs = () => {
             <h1 className="relative lg:text-6xl text-5xl text-tertiary font-bold leading-snug text-center lg:text-left lg:mb-6 mb-2 font-urban">
               About Us
             </h1>
-            <p className="text-xl leading-relaxed mb-4">
+            <p className="lg:text-xl tect-lg leading-relaxed mb-4">
               <strong> Transportation is essential</strong>
               —whether you're commuting, visiting loved ones, or enjoying your
               weekend. Yet, the rideshare industry has been tainted by
               monopolies and greed, turning a necessary service into a miserable
               experience.
             </p>
-            <p className="text-xl leading-relaxed mb-4 ">
+            <p className="lg:text-xl tect-lg leading-relaxed mb-4 ">
               <strong className="block">             
               We've Had Enough:</strong> Riders and drivers have made themselves clear—skyrocketing costs, unfair pay,
               terrible support, and shady practices have gone on long enough.
             </p>
-            <p className="text-xl leading-relaxed mb-4">
+            <p className="lg:text-xl tect-lg leading-relaxed mb-4">
               <strong className="block">
                 Taking Back Control:
               </strong>
               This is your platform. You drive our innovation. You suggest, we build. Drivers set
               their terms, and riders pick who they trust
             </p>
-            <p className="text-xl leading-relaxed mb-4">
+            <p className="lg:text-xl tect-lg leading-relaxed mb-4">
               <strong className="block">               
               Transparency Is Non-Negotiable:</strong> No games, no
               hidden fees, no nonsense. Just honest, clear pricing for everyone.

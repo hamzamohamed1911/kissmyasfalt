@@ -30,11 +30,11 @@ export default function Navbar() {
         scrolling ? "shadow-md " : ""
       }`}
     >
-      <nav className="flex items-center justify-between h-[60px] w-full max-w-screen-xl mx-auto">
+      <nav className="flex items-center justify-between h-[70px] w-full max-w-screen-xl mx-auto">
         {/* Logo */}
         <Link href="/">
-          <div className="flex items-center gap-2 transition-transform transform hover:scale-105">
-            <Image alt="kiss my asfalt" className="w-auto h-10" src={Logo}/>
+          <div className="flex items-center gap-2 transition-transform duration-300 transform hover:scale-110">
+            <Image alt="kiss my asfalt" className="w-auto h-16" src={Logo}/>
           </div>
         </Link>
 

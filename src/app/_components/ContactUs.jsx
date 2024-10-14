@@ -40,7 +40,7 @@ const ContactUs = () => (
               />
               <strong className="text-3xl text-primary block">Email :</strong>
             </div>
-              <p className="mt-1 text-xl">shebl.shady@gmail.com</p>
+              <p className="mt-1 text-xl">shady@kissmyasfalt.com</p>
             </div>
 
       

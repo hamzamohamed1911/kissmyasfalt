@@ -4,8 +4,10 @@ import bannerIcon from "./bannericon.png"
 import aboutUSImg from "./Leonardo_Lightning.jpg"
 import appStore from "./app-store-logo.svg"
 import googlePlay from "./google-play.svg"
-import founder1 from "./shady.jpeg"
-import founder2 from "./moe.jpeg"
+import appStoreIcon from "./simple-icons_apple.svg"
+import googlePlayIcon from "./logos_google-play-icon.svg"
+import founder1 from "./mrShady.jpeg"
+import founder2 from "./mrMo.jpeg"
 import Image1 from "./1stAmendment.jpg"
 import Image2 from "./2ndAmendment.jpg"
 import Image3 from "./3rdAmendment.jpg"
@@ -16,7 +18,7 @@ import driver from "./Leonardo_Lightning_XL_blue_car.jpg"
 import commonImg from "./common.jpg"
 import footerIcon from "./footerIcon.png"
 import TripBg from "./Group.svg"
-import Logo from "./logo.svg"
+import Logo from "./mainLogo.svg"
 import BrokeAsfalt from "./BrokeAsfalt.jpg"
 import smartasphalt from "./smartasphalt.jpg"
 import FancyAsfalt from "./FancyAsfalt.jpg"
@@ -90,6 +92,8 @@ export{
     applicationImg6,
     applicationImg7,
     applicationImg8,
-    applicationImg9
+    applicationImg9,
+    appStoreIcon,
+    googlePlayIcon
 
 }
