@@ -1,77 +1,13 @@
 import React, { useState } from "react";
 
-const rideData = [
-  {
-    type: "BROKE ASFALT",
-    hourlyRate: 20,
-    first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
-  },
-  {
-    type: "SMART ASFALT",
-    hourlyRate: 27.5,
-    first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
-  },
-  {
-    type: "FANCY ASFALT",
-    hourlyRate: 35,
-    first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
-  },
-  {
-    type: "CLASSIC ASFALT",
-    hourlyRate: 35,
-    first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
-  },
-  {
-    type: "HAIRY ASFALT",
-    hourlyRate: 35,
-    first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
-  },
-  {
-    type: "BIG ASFALT",
-    hourlyRate: 45,
-    first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
-  },
-  {
-    type: "NAKED ASFALT",
-    hourlyRate: 45,
-    first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
-  },
-  {
-    type: "BAD ASFALT",
-    hourlyRate: 150,
-    first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
-  },
-  {
-    type: "FIRST CLASS ASFALT",
-    hourlyRate: 150,
-    first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
-  },
-];
-const Driver = () => {
-  const [driverResult, setdriverResult] = useState(null);
+
+const Driver = ({rideData}) => {
   const [selectedRide, setSelectedRide] = useState("");
-  const [totalMiles, setTotalMiles] = useState("");
-  const [weeklyHours, setWeeklyHours] = useState("");
+  const [totalMiles, setTotalMiles] = useState(0);
+  const [weeklyHours, setWeeklyHours] = useState(0);
   const [weeklyEarnings, setWeeklyEarnings] = useState(0);
   const [ANNUAL, setANNUAL] = useState(0);
+  const [driverResult, setdriverResult] = useState(null)
 
   const calculateEarningsWeekly = () => {
     const ride = rideData.find((r) => r.type === selectedRide);
@@ -88,11 +24,11 @@ const Driver = () => {
     setWeeklyEarnings(totalWeeklyEarnings);
     setANNUAL(totalWeeklyEarnings * 52);
     setdriverResult(
-      `Your weekly earnings are ${weeklyEarnings.toFixed(
-        2
-      )} and your annual earnings are ${ANNUAL.toFixed(2)} $`
-    );
-  };
+        <p>
+          Your weekly earnings are <span className="font-bold">{weeklyEarnings.toFixed(2)}</span> $ and your annual earnings are <span className="font-bold">{ANNUAL.toFixed(2)}</span> $.
+        </p>
+      );
+        };
 
   return (
     <div className="bg-[#fbf9f5] p-6 rounded-lg shadow-lg">
@@ -109,7 +45,8 @@ const Driver = () => {
           className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
           onChange={(e) => setSelectedRide(e.target.value)}
         >
-          <option value="">Select Ride Type</option>
+                                    <option value="">Select Ride Type</option>
+
           {rideData.map((ride) => (
             <option key={ride.type} value={ride.type}>
               {ride.type}
@@ -151,10 +88,12 @@ const Driver = () => {
         Calculate
       </button>
       {driverResult && (
-        <div className="mt-4 p-4 bg-gray-100 rounded-md">
-          <p className="text-lg">{driverResult}</p>
-        </div>
-      )}
+          <div className="mt-4 p-4 bg-gray-100 rounded-md">
+            <p className="text-lg">{driverResult}</p>
+          </div>
+        )}
+      
+     
     </div>
   );
 };

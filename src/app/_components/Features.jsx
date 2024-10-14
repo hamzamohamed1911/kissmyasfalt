@@ -12,6 +12,71 @@ const Features = () => {
     visible: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: -50 },
   };
+  const rideData = [
+    {
+      type: "BROKE ASFALT",
+      hourlyRate: 20,
+      first15: 0.35,
+      second15: 0.5,
+      above30: 0.65,
+    },
+    {
+      type: "SMART ASFALT",
+      hourlyRate: 27.5,
+      first15: 0.35,
+      second15: 0.5,
+      above30: 0.65,
+    },
+    {
+      type: "FANCY ASFALT",
+      hourlyRate: 35,
+      first15: 0.35,
+      second15: 0.5,
+      above30: 0.65,
+    },
+    {
+      type: "CLASSIC ASFALT",
+      hourlyRate: 35,
+      first15: 0.35,
+      second15: 0.5,
+      above30: 0.65,
+    },
+    {
+      type: "HAIRY ASFALT",
+      hourlyRate: 35,
+      first15: 0.35,
+      second15: 0.5,
+      above30: 0.65,
+    },
+    {
+      type: "BIG ASFALT",
+      hourlyRate: 45,
+      first15: 0.35,
+      second15: 0.5,
+      above30: 0.65,
+    },
+    {
+      type: "NAKED ASFALT",
+      hourlyRate: 45,
+      first15: 0.35,
+      second15: 0.5,
+      above30: 0.65,
+    },
+    {
+      type: "BAD ASFALT",
+      hourlyRate: 150,
+      first15: 0.35,
+      second15: 0.5,
+      above30: 0.65,
+    },
+    {
+      type: "FIRST CLASS ASFALT",
+      hourlyRate: 150,
+      first15: 0.35,
+      second15: 0.5,
+      above30: 0.65,
+    },
+  ];
 
   return (
     <section id="features" className="w-auto h-auto pt-10 bg-[#d71515]">
@@ -53,7 +118,7 @@ const Features = () => {
           transition={{ duration: 0.5 }}
         >
           {activeTab === "driver" ? (
-            <Driver  />
+            <Driver rideData={rideData} />
           ) : (
             <Rider  />
           )}

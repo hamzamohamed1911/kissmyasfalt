@@ -43,13 +43,6 @@ import applicationImg7 from "./Rewards---Winner-Driver.png"
 import applicationImg8 from "./Trip-Preferences---rider.png"
 import applicationImg9 from "./Open-Dispute-2.png"
 
-
-
-
-
-
-
-
 export{
     exoticrides,
     standaredrides,

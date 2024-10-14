@@ -94,10 +94,12 @@ const Rider = () => {
         const DriverTakes = totalCharge * 0.9;
 
         setRiderResult(
-          `Your ride for ${distance} miles and ${timeInMinutes} minutes in a ${rideTypeRider} will cost ${totalCharge.toFixed(
-            2
-          )} $ dirver takes only ${DriverTakes.toFixed(2)} $`
-        );
+            <p>
+              Your ride for {distance} miles and  {timeInMinutes} minutes in a  {rideTypeRider} will cost  <span className="font-bold">{totalCharge.toFixed(2)} $</span>   .
+              The driver takes only  <span className="font-bold">{DriverTakes.toFixed(2)} $ </span>  .
+            </p>
+          );
+          
       } else {
         setRiderResult("Invalid ride type selected.");
       }
