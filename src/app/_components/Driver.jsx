@@ -103,10 +103,13 @@ const Driver = ({ rideData }) => {
         </div>
       )}
 
-      <p className="py-4">
-        “Calculation is based on Average of 35 miles / hr. Calculation is based on non stop rides
-        back to back.”
+      <p className="pt-4 font-medium">
+        Calculation is based on Average of 35 miles / hr. 
       </p>
+      <p className="pb-4 font-medium">
+      Calculation is based on non stop rides back to back.
+      </p>
+      
     </div>
   );
 };
