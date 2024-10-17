@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useMemo, memo } from "react";
 import { motion } from "framer-motion";
 import Driver from "./Driver";
 import Rider from "./Rider";
@@ -12,7 +12,9 @@ const Features = () => {
     visible: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: -50 },
   };
-  const rideData = [
+
+  // Memoizing rideData to avoid recreation on every render
+  const rideData = useMemo(() => [
     {
       type: "BROKE ASFALT",
       hourlyRate: 20,
@@ -76,7 +78,7 @@ const Features = () => {
       second15: 0.5,
       above30: 0.65,
     },
-  ];
+  ], []);
 
   return (
     <section id="features" className="w-auto h-auto pt-10 bg-[#d71515]">
@@ -118,14 +120,18 @@ const Features = () => {
           transition={{ duration: 0.5 }}
         >
           {activeTab === "driver" ? (
-            <Driver rideData={rideData} />
+            <MemoizedDriver rideData={rideData} />
           ) : (
-            <Rider  />
+            <MemoizedRider />
           )}
         </motion.div>
       </div>
     </section>
   );
 };
+
+// Memoizing component el two components to preventing re rendering
+const MemoizedDriver = memo(Driver);
+const MemoizedRider = memo(Rider);
 
 export default Features;

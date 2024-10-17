@@ -69,12 +69,16 @@ const Rider = () => {
   const [rideTime, setRideTime] = useState("");
   const [mileage, setMileage] = useState("");
   const [rideTypeRider, setRideTypeRider] = useState("");
+  const [loading, setLoading] = useState(false); 
+
 
   const calculateRider = () => {
     if (rideTime && mileage && rideTypeRider) {
+      setLoading(true); 
       const selectedRide = rideData.find((ride) => ride.type === rideTypeRider);
 
-      if (selectedRide) {
+
+      setTimeout(() => {        if (selectedRide) {
         const hourlyRate = selectedRide.hourlyRate;
         const first15MilesRate = selectedRide.first15;
         const second15MilesRate = selectedRide.second15;
@@ -96,13 +100,16 @@ const Rider = () => {
         setRiderResult(
             <p>
               Your ride for {distance} miles and  {timeInMinutes} minutes in a  {rideTypeRider} will cost  <span className="font-bold">{totalCharge.toFixed(2)} $</span>   .
-              The driver takes only  <span className="font-bold">{DriverTakes.toFixed(2)} $ </span>  .
+              The driver takes  <span className="font-bold">{DriverTakes.toFixed(2)} $ </span>  .
             </p>
           );
           
       } else {
         setRiderResult("Invalid ride type selected.");
-      }
+      }     setLoading(false); 
+      }, 1000);
+
+ 
     } else {
       setRiderResult("Please fill in all fields.");
     }
@@ -160,12 +167,18 @@ const Rider = () => {
         </div>
 
         <button
-          type="button"
-          onClick={calculateRider}
-          className="bg-[#d71515] hover:bg-[#e24040] text-white px-6 py-3 rounded-md font-bold mt-4"
-        >
-          Calculate
-        </button>
+        className={`bg-[#d71515] hover:bg-[#e24040] text-white px-6 py-3 rounded-md font-bold mt-4 flex items-center justify-center ${
+          loading ? "cursor-not-allowed" : ""
+        }`}
+        onClick={calculateRider}
+        disabled={loading}
+      >
+        {loading ? (
+         "Calculating..."
+        ) : (
+          "Calculate"
+        )}
+      </button>
         {riderResult && (
           <div className="mt-4 p-4 bg-gray-100 rounded-md">
             <p className="text-lg">{riderResult}</p>
