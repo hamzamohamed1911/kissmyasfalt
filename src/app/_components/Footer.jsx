@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { appStoreIcon, googlePlayIcon, Logo } from "../../../public";
 const Footer = () => {
   return (
@@ -32,11 +31,24 @@ const Footer = () => {
             </li>
           </ul>
           <div className="flex justify-center md:justify-end md:gap-6 gap-3 my-4 md:text-3xl text-2xl me-4 md:me-6">
-            <FaFacebookF className="text-[#868686] hover:text-white cursor-pointer" />
-            <FaInstagram className="text-[#868686] hover:text-white cursor-pointer" />
-            <FaSquareXTwitter className="text-[#868686] hover:text-white cursor-pointer" />
-            <FaWhatsapp className="text-[#868686] hover:text-white cursor-pointer" />
-          </div>
+      <a
+        href="https://www.instagram.com/kissmyasfalt/profilecard/?igsh=NGF3ZTZ6bDZidjFr"
+        target="_blank"
+        rel="noopener noreferrer"  
+        aria-label="Instagram"
+      >
+        <FaInstagram className="text-[#868686] hover:text-[#d71515] cursor-pointer" />
+      </a>
+
+      <a
+        href="https://www.tiktok.com/@kiss.my.asfalt?_t=8qknsdBcXKk&_r=1"
+        target="_blank"
+        rel="noopener noreferrer"  
+        aria-label="TikTok"
+      >
+        <FaTiktok className="text-[#868686] hover:text-[#d71515] cursor-pointer" />
+      </a>
+    </div>
         </div>
 
         <hr className="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 md:my-6" />

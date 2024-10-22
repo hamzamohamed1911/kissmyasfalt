@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 const Driver = ({ rideData }) => {
   const [selectedRide, setSelectedRide] = useState("");
-  const [totalMiles, setTotalMiles] = useState(0);
+  const [totalMiles] = useState(35);
   const [weeklyHours, setWeeklyHours] = useState(0);
   const [driverResult, setDriverResult] = useState(null);
   const [loading, setLoading] = useState(false); 
 
   const calculateEarningsWeekly = () => {
-    if (selectedRide && totalMiles && weeklyHours) {
+    if (selectedRide  && weeklyHours) {
       setLoading(true); 
 
       setTimeout(() => {
@@ -17,7 +17,7 @@ const Driver = ({ rideData }) => {
           const hourlyRate = ride.hourlyRate;
           const first15Cost = ride.first15 * 15;
           const second15Cost = ride.second15 * 15;
-          const above30Cost = totalMiles > 30 ? (totalMiles - 30) * ride.above30 : 0;
+          const above30Cost = totalMiles > 30 ? (35 - 30) * ride.above30 : 0;
 
           const totalCost = hourlyRate + first15Cost + second15Cost + above30Cost;
           const totalWeeklyEarnings = totalCost * weeklyHours * 0.9;
@@ -68,7 +68,7 @@ const Driver = ({ rideData }) => {
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
             placeholder="Enter mileage"
             value={totalMiles}
-            onChange={(e) => setTotalMiles(Number(e.target.value))}
+            disabled
           />
         </div>
         <div className="mb-4 md:w-1/2">

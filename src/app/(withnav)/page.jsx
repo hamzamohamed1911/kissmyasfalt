@@ -8,6 +8,7 @@ import SafetyGuidelines from "../_components/SafetyGuidelines";
 import WIIFM from "../_components/WIIFM";
 import Features from "../_components/Features";
 import Mobileapplication from "../_components/Mobileapplication";
+import RewardsSystem from "../_components/RewardsSystem";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Mobileapplication/>
       <Constitution />
       <WIIFM />
+      <RewardsSystem/>
       <Founders />
       <Features/>
       <Trips />

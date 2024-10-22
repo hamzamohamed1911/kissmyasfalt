@@ -1,59 +1,69 @@
-"use client"
-import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
-import { useRouter } from "next/navigation";
+"use client";
+import React, { useState } from "react";
 import { FiLoader } from "react-icons/fi";
 
 const Form = () => {
-  const form = useRef();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-  const router = useRouter();
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
 
-  const sendEmail = (e) => {
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = async (e) => {
     e.preventDefault();
+    setLoading(true);
     setSuccess(false);
     setError(false);
-    setLoading(true);
-    emailjs
-      .sendForm(
-        'service_53n7y5f', // Replace with your service ID
-        'template_qu8hffl', // Replace with your template ID
-        form.current,
-        'ajazcxg2g8xegXgrt' // Replace with your user ID (or public key in some cases)
-      )
-      .then(
-        () => {
-          setSuccess(true);
-          router.push("/successfulpage");
-          form.current.reset()
+
+    try {
+      const res = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        () => {
-          setError(true);
-          setLoading(false); 
+        body: JSON.stringify(formData),
+      });
 
-        }
-      );
-
-    e.target.reset();
+      if (res.ok) {
+        setSuccess(true);
+      } else {
+        setError(true);
+      }
+    } catch (error) {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="w-full md:w-1/2 bg-transparent rounded-lg">
-      <form ref={form} onSubmit={sendEmail}>
+      <form onSubmit={sendEmail}>
         <div className="flex flex-col md:flex-row gap-6 mb-6">
           <input
             type="text"
-            name="name"  
-            className="w-full md:w-1/2 px-4 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="w-full md:w-1/2 px-4 py-4 border border-gray-300 rounded-md  focus:outline-none focus:ring-2 focus:ring-red-500"
             placeholder="Your Name"
             required
           />
           <input
             type="email"
-            name="email" 
-            className="w-full md:w-1/2 px-4 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full md:w-1/2 px-4 py-4 border border-gray-300 rounded-md  focus:outline-none focus:ring-2 focus:ring-red-500"
             placeholder="Your Email"
             required
           />
@@ -62,13 +72,17 @@ const Form = () => {
         <div className="flex flex-col md:flex-row gap-6 mb-6">
           <input
             type="tel"
-            name="phone" 
-            className="w-full md:w-1/2 px-4 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full md:w-1/2 px-4 py-4 border border-gray-300 rounded-md  focus:outline-none focus:ring-2 focus:ring-red-500"
             placeholder="Your Phone"
           />
           <input
             type="text"
-            name="subject" 
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
             className="w-full md:w-1/2 px-4 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
             placeholder="Subject"
           />
@@ -76,41 +90,28 @@ const Form = () => {
 
         <div className="mb-6">
           <textarea
-            name="message" 
+            name="message"
             rows="5"
-            className="w-full px-4 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+            value={formData.message}
+            onChange={handleChange}
+            className="w-full px-4 py-4 border border-gray-300 rounded-md  focus:outline-none focus:ring-2 focus:ring-red-500"
             placeholder="Write your message"
             required
           ></textarea>
         </div>
 
-        <div>
         <button
-            type="submit"
-            disabled={loading} 
-            className={`w-full bg-[#d71515] text-white font-bold py-4 px-6 rounded-md transition-colors duration-300 hover:bg-red-700 ${
-              loading ? "cursor-not-allowed opacity-50" : ""
-            }`}
-          >
-            {loading ? (
-              <FiLoader className="animate-spin h-5 w-5 mx-auto" /> 
-            ) : (
-              "Send Message"
-            )}
-          </button>
-          <div className="py-1">
-            {success && (
-              <span className=" text-green-600 font-semibold">
-                Your message has been sent successfuly !
-              </span>
-            )}
-            {error && (
-              <span className="text-red-600 font-semibold">
-                smothing went Wrong !
-              </span>
-            )}
-          </div>
-        </div>
+          type="submit"
+          disabled={loading}
+          className={`w-full bg-red-500 text-white font-bold py-4 px-6 rounded-md ${
+            loading ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+        >
+          {loading ? <FiLoader className="animate-spin h-5 w-5 mx-auto" /> : "Send Message"}
+        </button>
+
+        {success && <p className="text-green-600 mt-4">Your message has been sent successfully!</p>}
+        {error && <p className="text-red-600 mt-4">Something went wrong. Please try again.</p>}
       </form>
     </div>
   );
