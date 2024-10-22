@@ -76,9 +76,7 @@ const TripsModal = ({ isOpen, onClose, title, subTrips }) => {
                     </p>
                   </div>
 
-                  <p className="lg:text-xl md:text-lg text-md mt-2 text-end self-end">
-                    Estimated cost: <strong>{subTrip.price}$</strong>
-                  </p>
+                
                 </div>
               </div>
             ))}

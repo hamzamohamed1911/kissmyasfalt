@@ -30,36 +30,30 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <div className="flex justify-center md:justify-end md:gap-6 gap-3 my-4 md:text-3xl text-2xl me-4 md:me-6">
-      <a
-        href="https://www.instagram.com/kissmyasfalt/profilecard/?igsh=NGF3ZTZ6bDZidjFr"
-        target="_blank"
-        rel="noopener noreferrer"  
-        aria-label="Instagram"
-      >
-        <FaInstagram className="text-[#868686] hover:text-[#d71515] cursor-pointer" />
-      </a>
-
-      <a
-        href="https://www.tiktok.com/@kiss.my.asfalt?_t=8qknsdBcXKk&_r=1"
-        target="_blank"
-        rel="noopener noreferrer"  
-        aria-label="TikTok"
-      >
-        <FaTiktok className="text-[#868686] hover:text-[#d71515] cursor-pointer" />
-      </a>
-    </div>
+          <div className="w-96">
+          <form className="relative block">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            className="w-full  pl-4 py-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200"
+          />
+          <button className="absolute right-0 bottom-1/2 pr-4 transform translate-y-1/2 bg-red-500 text-white text-lg py-4 px-6 rounded-full hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200">
+            Sign Up
+          </button>
+        </form>
+          </div>
         </div>
 
         <hr className="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 md:my-6" />
         <div className="flex md:justify-between flex-wrap justify-center space-y-6 items-center">
-          <span className="block text-sm text-white sm:text-center dark:text-gray-400">
+          <span className="block text-md text-white sm:text-center dark:text-gray-400">
             © 2024
             <a href="https://offer.evyx.net/" className="">
               EVYX
             </a>
             . All Rights Reserved.
           </span>
+
           <Link
             className="flex items-center justify-center duration-300 transform hover:scale-110"
             href="/"
@@ -100,7 +94,9 @@ const Footer = () => {
               />
             </button>
           </div>
+          
         </div>
+      
       </div>
     </footer>
   );

@@ -43,6 +43,12 @@ import applicationImg7 from "./7.png"
 import applicationImg8 from "./8.png"
 import applicationImg9 from "./9.png"
 import RewardsSystemImg from "./Competition.png"
+import Imagemoney1 from "./moneyMan.png"
+import Imagemoney2 from "./moneyMan2.png"
+import Imagemoney3 from "./moneyWoman.png"
+
+
+
 
 export{
     exoticrides,
@@ -89,5 +95,8 @@ export{
     applicationImg9,
     appStoreIcon,
     googlePlayIcon,
-    RewardsSystemImg
+    RewardsSystemImg,
+    Imagemoney1,
+    Imagemoney2,
+    Imagemoney3,
 }

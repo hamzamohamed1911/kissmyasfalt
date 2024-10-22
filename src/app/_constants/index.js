@@ -3,73 +3,64 @@ import { applicationImg1, applicationImg2, applicationImg3, applicationImg4, app
 
 export const TripsItemArr = [
   {
-    title: "standard",
+    title: "Standard",
     coverImage: standaredrides,
     subTrips: [
       {
-        type: "broke asphalt",
+        type: "Broke asfalt",
         description: "A way to save money and meetup with new friends, you could share the ride with some other rider heading in the same direction.",
-        price:20 ,
         subTripImage: BrokeAsfalt 
       },
       {
-        type: "smart asphalt",
+        type: "Smart asfalt",
         description: "Straightforward ride, average value for a decent experience. Enjoy the music or chit chat or even the silence.",
-        price:27.5,
         subTripImage: smartasphalt 
       },
       {
-        type: "fancy asphalt",
+        type: "Fancy asfalt",
         description: "Qualified cars, more legroom, premium rides for still an affordable price. Comfort and quality granted with every journey.",
-        price:35,
         subTripImage: FancyAsfalt 
       }
     ]
   },
   {
-    title: "specialty",
+    title: "Specialty",
     coverImage: specialityrides,
     subTrips: [
       {
         type: "Hairy asfalt",
         description: "don’t leave your furry friend behind, it surely wants to join your fun time.. don’t you want the same? just take them to poop before the trip.",
-        price:35,
         subTripImage: HairyAsfalt 
       },
       {
-        type: "classic asfalt",
+        type: "Classic asfalt",
         description: "driver will take more than the extra mile to ensure our precious seniors to have nothing less than exceptional service and assistance as needed.",
-        price:35,
         subTripImage: ClassicAsflat 
       },
       {
-        type: "Big Asfalt",
+        type: "Big asfalt",
         description: "Premium, specialized rides with attention to detail and maximum comfort.",
-        price:45,
         subTripImage: BigAsfalt 
       }
     ]
   },
   {
-    title: "exotic",
+    title: "Exotic",
     coverImage: exoticrides,
     subTrips: [
       {
-        type: "naked asfalt",
+        type: "Naked asfalt",
         description: "wanna go around in a convertible, were literally sky is the limit.. why not.",
-        price:200,
         subTripImage: nakedAsfalt 
       },
       {
-        type: "naked asfalt",
+        type: "Bad asfalt",
         description: "sports cars for one rider, why take a comfortable ride whn you can squeeze into a seat that will take your breath away.",
-        price:210,
         subTripImage: badaAssfalt 
       },
       {
         type: "First Class Asfalt",
         description: "Luxury at its finest. The most exclusive and premium exotic rides available.",
-        price:220,
         subTripImage: firstClass 
       }
     ]
