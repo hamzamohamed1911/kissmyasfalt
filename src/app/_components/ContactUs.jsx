@@ -54,7 +54,7 @@ const ContactUs = () => (
               <strong className="text-3xl text-primary block">Connect :</strong>
             </div>
 
-            <div className="flex justify-center md:justify-start gap-3 text-3xl mt-2">
+            <div className="flex justify-start gap-3 text-3xl mt-2">
             <a
         href="https://www.instagram.com/kissmyasfalt/profilecard/?igsh=NGF3ZTZ6bDZidjFr"
         target="_blank"
