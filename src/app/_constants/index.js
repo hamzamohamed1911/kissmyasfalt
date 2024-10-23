@@ -1,23 +1,23 @@
 import { AiOutlineCar, AiOutlineDollarCircle, AiOutlineSafety, AiOutlineStop, AiOutlineUser } from "react-icons/ai";
 import { applicationImg1, applicationImg2, applicationImg3, applicationImg4, applicationImg5, applicationImg6, applicationImg7, applicationImg8, applicationImg9, badaAssfalt, BigAsfalt, BrokeAsfalt, ClassicAsflat, exoticrides, FancyAsfalt, firstClass, HairyAsfalt, Image1, Image2, Image3, Image4, Image5, nakedAsfalt, smartasphalt, specialityrides, standaredrides } from "../../../public";
 
-export const TripsItemArr = [
+  export const TripsItemArr = [
   {
     title: "Standard",
     coverImage: standaredrides,
     subTrips: [
       {
-        type: "Broke asfalt",
+        type: "Broke Asfalt",
         description: "A way to save money and meetup with new friends, you could share the ride with some other rider heading in the same direction.",
         subTripImage: BrokeAsfalt 
       },
       {
-        type: "Smart asfalt",
+        type: "Smart Asfalt",
         description: "Straightforward ride, average value for a decent experience. Enjoy the music or chit chat or even the silence.",
         subTripImage: smartasphalt 
       },
       {
-        type: "Fancy asfalt",
+        type: "Fancy Asfalt",
         description: "Qualified cars, more legroom, premium rides for still an affordable price. Comfort and quality granted with every journey.",
         subTripImage: FancyAsfalt 
       }
@@ -28,17 +28,17 @@ export const TripsItemArr = [
     coverImage: specialityrides,
     subTrips: [
       {
-        type: "Hairy asfalt",
-        description: "don’t leave your furry friend behind, it surely wants to join your fun time.. don’t you want the same? just take them to poop before the trip.",
+        type: "Hairy Asfalt",
+        description: "Don’t leave your furry friend behind, it surely wants to join your fun time.. don’t you want the same? just take them to poop before the trip.",
         subTripImage: HairyAsfalt 
       },
       {
-        type: "Classic asfalt",
-        description: "driver will take more than the extra mile to ensure our precious seniors to have nothing less than exceptional service and assistance as needed.",
+        type: "Classic Asfalt",
+        description: "Driver will take more than the extra mile to ensure our precious seniors to have nothing less than exceptional service and assistance as needed.",
         subTripImage: ClassicAsflat 
       },
       {
-        type: "Big asfalt",
+        type: "Big Asfalt",
         description: "Premium, specialized rides with attention to detail and maximum comfort.",
         subTripImage: BigAsfalt 
       }
@@ -49,12 +49,12 @@ export const TripsItemArr = [
     coverImage: exoticrides,
     subTrips: [
       {
-        type: "Naked asfalt",
-        description: "wanna go around in a convertible, were literally sky is the limit.. why not.",
+        type: "Naked Asfalt",
+        description: "Wanna go around in a convertible, were literally sky is the limit.. why not.",
         subTripImage: nakedAsfalt 
       },
       {
-        type: "Bad asfalt",
+        type: "Bad Asfalt",
         description: "sports cars for one rider, why take a comfortable ride whn you can squeeze into a seat that will take your breath away.",
         subTripImage: badaAssfalt 
       },
@@ -66,7 +66,7 @@ export const TripsItemArr = [
     ]
   }
   ];
-export const links = [
+  export const links = [
     { href: '/', text: 'Home' },
     { href: '#about', text: 'About' },
     { href: '#constitution', text: 'Constitution' },
@@ -74,7 +74,7 @@ export const links = [
     { href: '#contact-us', text: 'Contact' },
 
   ];
- export const cards = [
+  export const cards = [
     {
       title: "Transparency and Fair Compensation",
       description:
@@ -106,7 +106,7 @@ export const links = [
       icon: <AiOutlineStop size={40} className="text-[#d71515]" />,
     },
   ];
- export const amendments = [
+  export const amendments = [
     {
       title: "Amendment I: Empowerment of Users",
       description:

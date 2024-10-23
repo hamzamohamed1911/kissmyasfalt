@@ -31,7 +31,7 @@ const ContactUs = () => (
       
 
             {/* Email */}
-            <div className="mb-3 text-center md:text-left col-span-1">
+            <div className="mb-3  text-left col-span-1">
             <div className="flex gap-3 items-center">
             <MdEmail
                 className="text-[#d71515] mb-2 غ"
