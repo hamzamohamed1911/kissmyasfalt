@@ -5,11 +5,11 @@ const Driver = ({ rideData }) => {
   const [totalMiles] = useState(35);
   const [weeklyHours, setWeeklyHours] = useState(0);
   const [driverResult, setDriverResult] = useState(null);
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
 
   const calculateEarningsWeekly = () => {
-    if (selectedRide  && weeklyHours) {
-      setLoading(true); 
+    if (selectedRide && weeklyHours) {
+      setLoading(true);
 
       setTimeout(() => {
         const ride = rideData.find((r) => r.type === selectedRide);
@@ -19,21 +19,29 @@ const Driver = ({ rideData }) => {
           const second15Cost = ride.second15 * 15;
           const above30Cost = totalMiles > 30 ? (35 - 30) * ride.above30 : 0;
 
-          const totalCost = hourlyRate + first15Cost + second15Cost + above30Cost;
+          const totalCost =
+            hourlyRate + first15Cost + second15Cost + above30Cost;
           const totalWeeklyEarnings = totalCost * weeklyHours * 0.9;
           const totalAnnualEarnings = totalWeeklyEarnings * 52;
 
           setDriverResult(
             <p>
-              Your weekly earnings are <span className="font-bold">{totalWeeklyEarnings.toFixed(2)}</span> $
-              and your annual earnings are <span className="font-bold">{totalAnnualEarnings.toFixed(2)}</span> $.
+              Your weekly earnings are{" "}
+              <span className="font-bold">
+                {totalWeeklyEarnings.toFixed(2)}
+              </span>{" "}
+              $ and your annual earnings are{" "}
+              <span className="font-bold">
+                {totalAnnualEarnings.toFixed(2)}
+              </span>{" "}
+              $.
             </p>
           );
         } else {
           setDriverResult("Invalid ride type selected.");
         }
 
-        setLoading(false); 
+        setLoading(false);
       }, 1000);
     } else {
       setDriverResult("Please fill in all fields.");
@@ -46,7 +54,9 @@ const Driver = ({ rideData }) => {
         calculate your earning
       </h1>
       <div className="my-4">
-        <label className="block text-lg font-medium text-gray-700 mb-2">Ride Type:</label>
+        <label className="block text-lg font-medium text-gray-700 mb-2">
+          Ride Type:
+        </label>
         <select
           value={selectedRide}
           className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -62,7 +72,9 @@ const Driver = ({ rideData }) => {
       </div>
       <div className="flex flex-col md:flex-row gap-6 mb-6">
         <div className="mb-4 md:w-1/2">
-          <label className="block text-lg font-medium text-gray-700 mb-2">Total Miles:</label>
+          <label className="block text-lg font-medium text-gray-700 mb-2">
+            Total Miles:
+          </label>
           <input
             type="number"
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -72,7 +84,9 @@ const Driver = ({ rideData }) => {
           />
         </div>
         <div className="mb-4 md:w-1/2">
-          <label className="block text-lg font-medium text-gray-700 mb-2">Weekly Hours:</label>
+          <label className="block text-lg font-medium text-gray-700 mb-2">
+            Weekly Hours:
+          </label>
           <input
             type="number"
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -90,11 +104,7 @@ const Driver = ({ rideData }) => {
         onClick={calculateEarningsWeekly}
         disabled={loading}
       >
-        {loading ? (
-         "Calculating..."
-        ) : (
-          "Calculate"
-        )}
+        {loading ? "Calculating..." : "Calculate"}
       </button>
 
       {driverResult && (
@@ -102,14 +112,10 @@ const Driver = ({ rideData }) => {
           <p className="text-lg">{driverResult}</p>
         </div>
       )}
-
-      <p className="pt-4 font-medium">
-        Calculation is based on Average of 35 miles / hr. 
-      </p>
-      <p className="pb-4 font-medium">
-      Calculation is based on non stop rides back to back.
-      </p>
-      
+      <ol className="list-disc pl-6 mt-2 font-medium">
+        <li>Calculation is based on Average of 35 miles / hr.</li>
+        <li>Calculation is based on non stop rides back to back.</li>
+      </ol>
     </div>
   );
 };

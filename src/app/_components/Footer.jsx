@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
         <span className="block text-md text-white sm:text-center mt-6 ">
           KISS MY ASFALT | All Rights Reserved | Powered by <a href="https://evyx.net/" className="text-red-500 hover:underline"> EVYX
-          </a>  2024©
+          </a>  2024 ©
         </span>
       </div>
     </footer>
