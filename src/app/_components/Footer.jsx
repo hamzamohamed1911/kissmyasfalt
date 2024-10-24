@@ -73,7 +73,7 @@ const Footer = () => {
             >
               <Image
                 priority
-                className="h-14 w-auto  "
+                className="h-12 w-auto  "
                 src={googlePlayIcon}
                 alt="Download on Google Play"
               />
@@ -89,7 +89,7 @@ const Footer = () => {
             >
               <FaInstagram
                 size={35}
-                className="text-[#868686] hover:text-[#d71515] cursor-pointer"
+                className="text-[#FFFFFF] hover:text-[#868686] cursor-pointer"
               />
             </a>
 
@@ -101,7 +101,7 @@ const Footer = () => {
             >
               <FaTiktok
                 size={35}
-                className="text-[#868686] hover:text-[#d71515] cursor-pointer"
+                className="text-[#FFFFFF] hover:text-[#868686] cursor-pointer"
               />
             </a>
           </div>

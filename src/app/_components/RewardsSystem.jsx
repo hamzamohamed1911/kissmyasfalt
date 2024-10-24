@@ -11,8 +11,8 @@ const RewardsSystem = () => {
         </h1>
         {/* left Content */}
 
-        <div className="grid grid-cols-12 gap-8 w-full my-8 text-lg relative">
-          <div className="col-span-12 lg:col-span-5 relative ">
+        <div className="grid grid-cols-12 gap-6 w-full my-8 text-lg relative">
+          <div className="col-span-12 lg:col-span-5 relative bg-[#f9f9f9] p-4 rounded-lg shadow-md ">
             <h1 className="font-bold text-4xl flex justify-center text-[#3C3B6E] font-urban"> Competition</h1>
             <div className="space-y-8 text-[#868686]">
               <div className="absolute top-1/2 lg:left-1/2 md:left-1/3 left-0 w-full opacity-25 ">
@@ -63,7 +63,7 @@ const RewardsSystem = () => {
                 whether long or short, waiting for the bonus period to start.
               </div>
 
-              <div className="bg-[#f9f9f9] p-6 rounded-lg shadow-md">
+              <div className="">
                 <strong className="text-[#d71515]">
                   Drivers, ask yourselves:
                 </strong>
@@ -93,7 +93,7 @@ const RewardsSystem = () => {
           </div>
 
           {/* Right Content */}
-          <div className="col-span-12 lg:col-span-5 relative">
+          <div className="col-span-12 lg:col-span-5 relative bg-[#f9f9f9] p-4 rounded-lg shadow-md">
             {/* Add an image here for the right-side content */}
             <h1 className="font-bold text-4xl flex justify-center text-[#3C3B6E] font-urban "> kiss my
             asfalt</h1>
@@ -125,7 +125,7 @@ const RewardsSystem = () => {
               </div>
 
               {/* Service Level-Based Competition */}
-              <div className="bg-[#f9f9f9] p-6 rounded-lg shadow-md">
+              <div className="">
                 <strong className="text-[#d71515]">
                   Service Level-Based Competition:
                 </strong>
@@ -155,7 +155,7 @@ const RewardsSystem = () => {
               </div>
 
               {/* Actual Rewards */}
-              <div className="bg-[#f9f9f9] p-6 rounded-lg shadow-md">
+              <div className="">
                 <span className="text-[#d71515] block">
                   <strong>Rewards That Are Truly Worth It: </strong>
                 </span>
