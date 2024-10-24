@@ -9,6 +9,7 @@ import WIIFM from "../_components/WIIFM";
 import Features from "../_components/Features";
 import Mobileapplication from "../_components/Mobileapplication";
 import RewardsSystem from "../_components/RewardsSystem";
+import SignUp from "../_components/SignUp";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <WIIFM />
       <RewardsSystem/>
       <Founders />
+      <SignUp/>
       <Features/>
       <Trips />
       <SafetyGuidelines/>

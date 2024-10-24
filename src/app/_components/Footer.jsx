@@ -30,22 +30,21 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <div className="md:w-96 w-full">
-            <form className="relative block">
-              <input
-                type="text"
-                placeholder="Enter your email"
-                className="w-full  pl-4 py-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200"
-              />
-              <button className="absolute right-0 bottom-1/2 pr-4 transform translate-y-1/2 bg-red-500 text-white text-lg py-4 px-6 rounded-full hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-200">
-                Sign Up
-              </button>
-            </form>
-          </div>
+          <Link
+            className="flex items-center justify-center duration-300 transform hover:scale-110"
+            href="/"
+          >
+            <Image
+              alt="kiss my asfalt"
+              className="w-auto h-24"
+              priority
+              src={Logo}
+            />
+          </Link>
         </div>
 
         <hr className="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 md:my-6" />
-        <div className="flex md:justify-between flex-wrap justify-center space-y-6 items-center">
+        <div className="flex justify-between flex-wrap  space-y-6 items-center">
           <div className="flex  justify-center items-center gap-3 md:gap-4 ">
             <button
               href="https://www.apple.com/app-store/"
@@ -74,17 +73,7 @@ const Footer = () => {
               />
             </button>
           </div>
-          <Link
-            className="flex items-center justify-center duration-300 transform hover:scale-110"
-            href="/"
-          >
-            <Image
-              alt="kiss my asfalt"
-              className="w-auto h-24"
-              priority
-              src={Logo}
-            />
-          </Link>
+ 
           <div className="flex justify-center items-center gap-3 text-3xl mt-2">
             <a
               href="https://www.instagram.com/kissmyasfalt/profilecard/?igsh=NGF3ZTZ6bDZidjFr"

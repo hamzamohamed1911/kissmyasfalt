@@ -53,7 +53,9 @@ const Driver = ({ rideData }) => {
       <h1 className="flex justify-center items-center text-3xl font-bold mb-4 text-gray-700">
         calculate your earning
       </h1>
-      <div className="my-4">
+ 
+      <div className="flex flex-col md:flex-row gap-6 mb-6">
+        <div className="mb-4 md:w-1/2">
         <label className="block text-lg font-medium text-gray-700 mb-2">
           Ride Type:
         </label>
@@ -69,19 +71,6 @@ const Driver = ({ rideData }) => {
             </option>
           ))}
         </select>
-      </div>
-      <div className="flex flex-col md:flex-row gap-6 mb-6">
-        <div className="mb-4 md:w-1/2">
-          <label className="block text-lg font-medium text-gray-700 mb-2">
-            Total Miles:
-          </label>
-          <input
-            type="number"
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
-            placeholder="Enter mileage"
-            value={totalMiles}
-            disabled
-          />
         </div>
         <div className="mb-4 md:w-1/2">
           <label className="block text-lg font-medium text-gray-700 mb-2">

@@ -46,12 +46,14 @@ import RewardsSystemImg from "./Competition.png"
 import Imagemoney1 from "./moneyMan.png"
 import Imagemoney2 from "./moneyMan2.png"
 import Imagemoney3 from "./moneyWoman.png"
+import VsIcon from "./VS.svg"
 
 
 
 
 export{
     exoticrides,
+    VsIcon,
     standaredrides,
     specialityrides,
     badaAssfalt,
