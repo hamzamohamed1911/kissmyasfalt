@@ -184,6 +184,15 @@ const Rider = () => {
             <p className="text-lg">{riderResult}</p>
           </div>
         )}
+     <h3 className="font-semibold my-2">This is the service fee, doesn’t include :</h3>
+<ol className="list-disc pl-6 mt-2 font-medium">
+  <li>Taxes</li>
+  <li>Tolls</li>
+  <li>Airport fees</li>
+  <li>Tips</li>
+  <li>Etc…</li>
+</ol>
+
       </form>
     </div>
   );

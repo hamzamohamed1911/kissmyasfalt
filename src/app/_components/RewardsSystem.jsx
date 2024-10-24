@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Imagemoney1, Imagemoney2, Imagemoney3, VsIcon } from "../../../public";
+import { Imagemoney1, Imagemoney2, Imagemoney3, sadPerson, VsIcon } from "../../../public";
 
 const RewardsSystem = () => {
   return (
@@ -9,9 +9,10 @@ const RewardsSystem = () => {
         <h1 className="lg:text-7xl md:text-5xl text-4xl font-bold text-[#d71515] mb-12 text-center font-urban leading-tight">
           Rewards System
         </h1>
-        {/* left Content */}
+        
 
         <div className="grid grid-cols-12 gap-6 w-full my-8 text-lg relative">
+          {/* left Content */}
           <div className="col-span-12 lg:col-span-5 relative bg-[#f9f9f9] p-4 rounded-lg shadow-md ">
             <h1 className="font-bold text-4xl flex justify-center text-[#3C3B6E] font-urban"> Competition</h1>
             <div className="space-y-8 text-[#868686]">
@@ -85,6 +86,15 @@ const RewardsSystem = () => {
                   Sounds like more than just bad luck, doesn’t it?
                 </span>
               </div>
+              <div className="absolute top-0 -right-0 w-full opacity-25">
+                <Image
+                  src={sadPerson}
+                  alt="Money icon"
+                  width={400}
+                  height={400}
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
 
@@ -99,11 +109,11 @@ const RewardsSystem = () => {
             asfalt</h1>
 
             <div className="space-y-8 text-[#868686]">
-              <div className="absolute -top-16 right-0 w-full opacity-25">
+              <div className="absolute -top-0 right-0 w-full opacity-25">
                 <Image
                   src={Imagemoney2}
                   alt="Money icon"
-                  width={400}
+                  width={500}
                   height={400}
                   className="object-contain"
                 />
@@ -181,19 +191,22 @@ const RewardsSystem = () => {
                   These are actual rewards that make your effort pay off.
                 </span>
               </div>
+       
             </div>
-          </div>
-        </div>
-
-        <div className=" w-full  absolute -bottom-16 right-0 opacity-25">
+            <div className=" w-full  absolute -bottom-0 right-0 opacity-25">
           <Image
             src={Imagemoney3}
             alt="Rewards illustration"
-            width={400}
+            width={500}
             height={400}
             className="object-contain"
           />
         </div>
+          </div>
+          
+        </div>
+
+        
       </div>
     </section>
   );

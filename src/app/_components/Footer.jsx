@@ -3,38 +3,24 @@ import Link from "next/link";
 import React from "react";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { appStoreIcon, googlePlayIcon, Logo } from "../../../public";
+import { links } from "../_constants";
 const Footer = () => {
   return (
     <footer className="bg-[#2a2a2a]   dark:bg-gray-900 font-urban">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <ul className="flex flex-wrap items-center gap-4 py-4 text-md md:text-xl font-medium text-white sm:mb-0 dark:text-gray-400">
-            <li className="hover:translate-x-1 transition-transform duration-700 text-white">
-              <a href="#about" className=" me-4 md:me-6 text-white">
-                About
-              </a>
+         
+            {links.map((link, index) => (
+            <li className="hover:translate-x-1 transition-transform duration-700 text-white" key={index}>
+              <Link
+                className="transition-transform transform duration-300  me-4 md:me-6"
+                href={link.href}
+              >
+                {link.text}
+              </Link>
             </li>
-            <li className="hover:translate-x-1 transition-transform duration-700 text-white">
-              <a href="#trips" className=" me-4 md:me-6 text-white">
-                All Trips
-              </a>
-            </li>
-            <li className="hover:translate-x-1 transition-transform duration-700 text-white">
-              <a className=" me-4 md:me-6 text-white " href="#features">
-              features
-              </a>
-            </li>
-            <li className="hover:translate-x-1 transition-transform duration-700 text-white">
-              <a href="#constitution" className=" me-4 md:me-6 text-white">
-                constitution
-              </a>
-            </li>
-            <li className="hover:translate-x-1 transition-transform duration-700 text-white">
-              <a className=" me-4 md:me-6 text-white " href="#contact-us">
-                Contact Us
-              </a>
-            </li>
-        
+          ))}
           </ul>
           <Link
             className="flex items-center justify-center duration-300 transform hover:scale-110"
