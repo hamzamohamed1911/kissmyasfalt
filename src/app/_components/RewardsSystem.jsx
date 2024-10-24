@@ -3,7 +3,7 @@ import { Imagemoney1, Imagemoney2, Imagemoney3, sadPerson, VsIcon } from "../../
 
 const RewardsSystem = () => {
   return (
-    <section id="rewards-system" className="w-full h-auto my-20 py-16 ">
+    <section id="rewards-system" className="w-full h-auto my-20 py-16 p-4">
       <div className="container mx-auto flex flex-col items-center justify-center py-8 px-4 md:px-0 relative">
         {/* Heading */}
         <h1 className="lg:text-7xl md:text-5xl text-4xl font-bold text-[#d71515] mb-12 text-center font-urban leading-tight">
