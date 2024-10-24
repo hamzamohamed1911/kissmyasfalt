@@ -20,6 +20,11 @@ const Footer = () => {
               </a>
             </li>
             <li className="hover:translate-x-1 transition-transform duration-700 text-white">
+              <a className=" me-4 md:me-6 text-white " href="#features">
+              features
+              </a>
+            </li>
+            <li className="hover:translate-x-1 transition-transform duration-700 text-white">
               <a href="#constitution" className=" me-4 md:me-6 text-white">
                 constitution
               </a>
@@ -29,6 +34,7 @@ const Footer = () => {
                 Contact Us
               </a>
             </li>
+        
           </ul>
           <Link
             className="flex items-center justify-center duration-300 transform hover:scale-110"
