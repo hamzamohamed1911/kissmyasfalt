@@ -69,10 +69,12 @@ import { applicationImg1, applicationImg2, applicationImg3, applicationImg4, app
   export const links = [
     { href: '/', text: 'Home' },
     { href: '#about', text: 'About' },
-    { href: '#features', text: 'features' },
     { href: '#constitution', text: 'Constitution' },
+    { href: '#rewards-systems', text: 'Reward' },
+    { href: '#features', text: 'features' },
     { href: '#trips', text: 'All Trips' },
     { href: '#contact-us', text: 'Contact' },
+
 
   ];
   export const cards = [

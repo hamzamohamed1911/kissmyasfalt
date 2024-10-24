@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Imagemoney1, Imagemoney2, Imagemoney3, sadPerson, VsIcon } from "../../../public";
+import { Imagemoney1, Imagemoney2, Imagemoney3, Logo, sadPerson, VsIcon } from "../../../public";
 
 const RewardsSystem = () => {
   return (
-    <section id="rewards-system" className="w-full h-auto my-20 py-16 p-4">
+    <section id="rewards-systems" className="w-full h-auto my-20 py-16 p-4">
       <div className="container mx-auto flex flex-col items-center justify-center py-8 px-4 md:px-0 relative">
         {/* Heading */}
         <h1 className="lg:text-7xl md:text-5xl text-4xl font-bold text-[#d71515] mb-12 text-center font-urban leading-tight">
@@ -14,7 +14,13 @@ const RewardsSystem = () => {
         <div className="grid grid-cols-12 gap-6 w-full my-8 text-lg relative">
           {/* left Content */}
           <div className="col-span-12 lg:col-span-5 relative bg-[#f9f9f9] p-4 rounded-lg shadow-md ">
-            <h1 className="font-bold text-4xl flex justify-center text-[#3C3B6E] font-urban"> Competition</h1>
+          <h1 className="font-bold text-4xl flex justify-center font-urban" 
+    style={{
+        color: '#7CFC00', 
+        textShadow: '4px 4px 0px #800080' 
+    }}>
+    Competition
+</h1>
             <div className="space-y-8 text-[#868686]">
               <div className="absolute top-1/2 lg:left-1/2 md:left-1/3 left-0 w-full opacity-25 ">
                 <Image
@@ -105,8 +111,17 @@ const RewardsSystem = () => {
           {/* Right Content */}
           <div className="col-span-12 lg:col-span-5 relative bg-[#f9f9f9] p-4 rounded-lg shadow-md">
             {/* Add an image here for the right-side content */}
-            <h1 className="font-bold text-4xl flex justify-center text-[#3C3B6E] font-urban "> kiss my
-            asfalt</h1>
+            <div
+            className="flex items-center justify-center py-5"
+            href="/"
+          >
+            <Image
+              alt="kiss my asfalt"
+              className="w-auto h-24 absolute z-20 "
+              priority
+              src={Logo}
+            />
+          </div>
 
             <div className="space-y-8 text-[#868686]">
               <div className="absolute -top-0 right-0 w-full opacity-25">
