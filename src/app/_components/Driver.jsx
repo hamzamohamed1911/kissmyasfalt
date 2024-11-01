@@ -51,7 +51,7 @@ const Driver = ({ rideData }) => {
   return (
     <div className="bg-[#fbf9f5] p-6 rounded-lg shadow-lg">
       <h1 className="flex justify-center items-center text-3xl font-bold mb-4 text-gray-700">
-        calculate your earning
+        Calculate Your Earning
       </h1>
  
       <div className="flex flex-col md:flex-row gap-6 mb-6">

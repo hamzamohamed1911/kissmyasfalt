@@ -68,10 +68,11 @@ import { applicationImg1, applicationImg2, applicationImg3, applicationImg4, app
   ];
   export const links = [
     { href: '/', text: 'Home' },
-    { href: '#about', text: 'About' },
+    { href: '#about', text: 'About Us' },
     { href: '#constitution', text: 'Constitution' },
-    { href: '#rewards-systems', text: 'Reward' },
-    { href: '#features', text: 'features' },
+    { href: '#wifm', text: 'WIFM' },
+    { href: '#rewards-systems', text: 'Rewards' },
+    { href: '#features', text: 'Features' },
     { href: '#trips', text: 'All Trips' },
     { href: '#contact-us', text: 'Contact' },
 
@@ -111,35 +112,39 @@ import { applicationImg1, applicationImg2, applicationImg3, applicationImg4, app
   ];
   export const amendments = [
     {
-      title: "Amendment I: Empowerment of Users",
+      head:"Amendment I",
+      title: "Empowerment of Users",
       description:
         "The rights of riders and drivers to direct the future of the platform shall not be infringed. Users shall serve as the architects of innovation, contributing to the development of features that align with their needs and preferences.",
          coverImage: Image1, 
 
     },
     {
-      title: "Amendment II: Transparency and Fair Compensation",
+      head:"Amendment II",
+      title: " Transparency and Fair Compensation",
       description:
         "In all transactions, there shall be full transparency. Riders and drivers shall have the right to know the exact cost of the service, as well as the precise earnings of the service provider. Drivers shall be paid no less than 90% of the service charge paid by the rider, ensuring fairness and equitable compensation in every ride.",
         coverImage: Image2, 
 
     },
     {
-      title: "Amendment III: Autonomy of Choice",
+      head:"Amendment III",
+      title: "Autonomy of Choice",
       description:
         "Drivers shall have the unalienable right to select their destinations and areas of operation without restriction. Riders shall have the right to choose their preferred drivers, thereby enhancing safety and satisfaction for all parties involved.",
         coverImage: Image3, 
 
     },
-    {
-      title: "Amendment IV: Accountability in Support",
+    { head:"Amendment IV",
+      title: "Accountability in Support",
       description:
         "All conflicts shall be judged by the users themselves, acting as the jury. The company shall serve as the enforcer of the law, ensuring that no account is suspended without clear, documented reasoning. Every action taken will be transparent and justified, protecting the rights of all users and maintaining trust within the community.",
         coverImage: Image4, 
 
     },
     {
-      title: "Amendment V: Freedom from Exploitation",
+      head:"Amendment V",
+      title: "Freedom from Exploitation",
       description:
         "Surge pricing shall never be implemented. All users, regardless of time or demand, shall have access to fair and consistent pricing. The platform commits to maintaining a stable cost structure, ensuring that no rider is ever overcharged due to fluctuating demand.",
         coverImage: Image5, 

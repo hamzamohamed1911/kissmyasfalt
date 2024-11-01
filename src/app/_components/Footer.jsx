@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-[#2a2a2a]   dark:bg-gray-900 font-urban">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <ul className="flex flex-wrap items-center gap-4 py-4 text-md md:text-xl font-medium text-white sm:mb-0 dark:text-gray-400">
+          <ul className="flex flex-wrap items-center justify-center gap-4 py-4 text-md md:text-xl font-medium text-white sm:mb-0 dark:text-gray-400">
          
             {links.map((link, index) => (
             <li className="hover:translate-x-1 transition-transform duration-700 text-white" key={index}>
@@ -92,10 +92,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <span className="block text-md text-white text-center font-urban mt-6 ">
-          KISS MY ASFALT | All Rights Reserved | Powered by <a href="https://evyx.net/" className="text-red-500 hover:underline"> EVYX
-          </a>  2024 ©
-        </span>
+     
       </div>
     </footer>
   );

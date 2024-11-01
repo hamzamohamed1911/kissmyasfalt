@@ -25,9 +25,14 @@ const ConstitutionItem = () => {
 
           <div className="absolute inset-0 flex justify-center bg-white opacity-0 transition-opacity duration-300 ease-in-out cursor-pointer group-hover:opacity-100">
             <div className="p-4 text-center flex flex-col justify-evenly">
-              <h3 className="md:text-3xl text-2xl font-semibold text-[#d71515]">
+          <div className="gap-1">
+          <h3 className="md:text-3xl text-2xl font-semibold text-[#d71515] block">
+                {amendment.head}
+              </h3>
+              <h3 className=" text-2xl font-semibold text-[#d71515] block">
                 {amendment.title}
               </h3>
+          </div>
               <p className="text-xl text-primary">{amendment.description}</p>
             </div>
           </div>

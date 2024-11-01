@@ -3,7 +3,7 @@ import MobileScreenshotSlider from "./MobileScreenshotSlider";
 const Mobileapplication = () => {
   return (
     <section
-      id="features"
+      id="mobile-application"
       className="w-auto h-auto  pt-10 bg-[#d71515]"
     >
       <div className="flex items-center flex-col justify-center container w-full  h-auto py-8">

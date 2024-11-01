@@ -132,3 +132,44 @@ html, body {
   display: inline-block;
   animation: scroll 10s linear infinite;
 }
+@keyframes count-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes change {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.count-up {
+  animation: count-up 0.5s ease-out;
+}
+
+.animate-change {
+  animation: change 0.5s ease-out;
+}
+
+
+
+.animate-change {
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.animate-change:hover {
+  transform: scale(1.05);
+  text-shadow: 3px 3px 0 #2F2F5D;
+}

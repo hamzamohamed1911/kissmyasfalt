@@ -38,23 +38,22 @@ const WIIFM = () => {
             <ul className="space-y-4 text-[#868686] relative z-10 lg:text-xl text-lg">
               <li className=" space-x-3">
                 <strong className="text-primary">
-                  Maximum Financial Benefit :
-                </strong>
-                You’re a small business owner, and we’ll treat you like one. You
+                  Maximum Financial Benefit 
+                </strong> You’re a small business owner, and we’ll treat you like one. You
                 keep 90% of the service charge—because your hard work deserves
-                real earnings
+                real earnings.
               </li>
               <li className=" space-x-3">
-                <strong className="text-primary"> True Freedom : </strong> Call
+                <strong className="text-primary"> True Freedom  </strong> Call
                 the shots—choose where you work, set your ride distance, and
                 decide your fare range. No limits, just your rules. We’re
                 putting the power back in your hands, where it belongs.
               </li>
               <li className=" space-x-3">
-                <strong className="text-primary"> Reward System : </strong>
+                <strong className="text-primary"> Reward System  </strong>
                 Performance based, not by location. We won’t push you to chase
                 endless short trips and ignore the longer ones for pennies. You
-                work smart, you get rewarded fairly—simple as that
+                work smart, you get rewarded fairly—simple as that.
               </li>
             </ul>
           </div>
@@ -78,18 +77,18 @@ const WIIFM = () => {
             </h2>
             <ul className="space-y-4 text-[#868686] relative z-10 lg:text-xl text-lg">
               <li>
-                <strong className="text-primary">Fair pricing: </strong>
-                no surge, your battery level won’t “allegedly” raise the
-                price—only traffic will. No tricks, just transparency
+                <strong className="text-primary">Fair pricing </strong>
+                No surge, your battery level won’t “allegedly” raise the
+                price—only traffic will. No tricks, just transparency.
               </li>
               <li>
-                <strong className="text-primary"> Familiar Faces:</strong> Enjoy
+                <strong className="text-primary"> Familiar Faces</strong> Enjoy
                 rides with drivers you know and trust, with fewer cancellations.
                 Your safety and comfort are our priority—no surprises, just
                 consistency.
               </li>
               <li>
-                <strong className="text-primary">Reward System: </strong>
+                <strong className="text-primary">Reward System </strong>
                 Now you can finally get a "thank you" for doing all that hard
                 work sitting in the backseat—because being nice really should
                 pay off, right?
@@ -110,34 +109,34 @@ const WIIFM = () => {
             />
           </div>
           <h2 className="text-4xl font-bold  mb-6 text-center text-primary">
-            Common Benefits
+            Common 
           </h2>
           <ul className="space-y-6 text-[#868686] lg:text-xl text-lg">
             <li>
               
-              <strong className="text-primary"> Safety: </strong>
+              <strong className="text-primary"> Safety </strong>
               Because nothing says trust like knowing both riders and drivers
               have passed their background checks— everyone’s getting vetted,
-              just to keep things interesting!
+              just to keep things interesting.
             </li>
             <li>
               <strong className="text-primary">
-                Customer Service Control: </strong>
-              Customer Service Control: Users act as a jury and judge in
+                Customer Service Control </strong>
+              Users act as a jury and judge in
               disputes.
             </li>
 
             <li>
               <strong className="text-primary">  
-                User Driven Research & Development: </strong>
-              R&D Participation: Contribute ideas to shape the future of the
+                User Driven Research & Development </strong>
+            Contribute ideas to shape the future of the
               platform.
             </li>
 
             <li>
               <strong className="text-primary">
-                  Groundbreaking Incentives: </strong>
-              Second Chances: Opportunity for users to redeem themselves and
+              Second Chances </strong>
+              Opportunity for users to redeem themselves and
               rebuild their lives.
             </li>
           </ul>

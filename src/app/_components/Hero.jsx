@@ -1,4 +1,5 @@
 import { appStore, googlePlay, heroImg1, heroImg2 } from "../../../public";
+import Countdown from "./Countdown";
 import HeroImages from "./HeroImages";
 import Image from "next/image";
 
@@ -32,7 +33,8 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 justify-center lg:justify-start items-center lg:items-start md:my-12 my-6">
-            <button
+            <Countdown/>
+            {/* <button
               href="https://www.apple.com/app-store/"
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +59,7 @@ const Hero = () => {
                 src={googlePlay}
                 alt="Download on Google Play"
               />
-            </button>
+            </button> */}
           </div>
         </div>
 
