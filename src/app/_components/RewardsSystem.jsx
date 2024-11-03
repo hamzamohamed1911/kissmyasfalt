@@ -132,13 +132,13 @@ const RewardsSystem = () => {
               </div>
               {/* Non-Stop Competition */}
               <div>
-                <strong className="text-[#d71515]">
+                <strong className="text-[#d71515] font-urban">
                   Non-Stop Competition </strong>
                 You’re always in the game! Rewards are given every 6 hours,
                 every week, and every month.
               </div>
               <div>
-                <strong className="text-[#d71515]">
+                <strong className="text-primary">
                   Riders Get Rewarded by Drivers </strong>
                 Your kindness matters! The top drivers reward their best riders,
                 so being polite and having a great attitude actually pays back.
@@ -146,7 +146,7 @@ const RewardsSystem = () => {
 
               {/* Service Level-Based Competition */}
               <div className="">
-                <strong className="text-[#d71515]">
+                <strong className="text-[#d71515] font-urban">
                   Service Level-Based Competition </strong>
                 Focuses on fair performance and isn’t tied to
                 <ol className="list-disc pl-6 mt-2">
@@ -158,7 +158,7 @@ const RewardsSystem = () => {
 
               {/* What Truly Matters */}
               <div>
-                <strong className="text-[#d71515]">
+                <strong className="text-primary  ">
                   Instead, it rewards you for what truly matters
                 </strong>
                 <ol className="list-disc pl-6 mt-2">
