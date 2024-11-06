@@ -85,7 +85,7 @@ const RewardsSystem = () => {
                     when you’re just a minute away?
                   </li>
                 </ol>
-                <span className="text-primary mt-4 block">
+                <span className="text-[#d71515] mt-4 block">
                   Sounds like more than just bad luck, doesn’t it?
                 </span>
               </div>
