@@ -68,7 +68,7 @@ const RewardsSystem = () => {
               </div>
 
               <div className="">
-                <strong className="text-primary">
+                <strong className="text-[#d71515] font-urban">
                   Drivers, ask yourselves
                 </strong>
                 <ol className="list-disc pl-6 mt-2 space-y-3">
@@ -175,7 +175,7 @@ const RewardsSystem = () => {
 
               {/* Actual Rewards */}
               <div className="">
-                <span className="text-[#d71515] block">
+                <span className="text-[#d71515] block font-urban">
                   <strong>Rewards That Are Truly Worth It </strong>
                 </span>
                 You’re not just earning points; you’re getting real value!
