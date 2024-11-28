@@ -72,7 +72,7 @@ import { applicationImg1, applicationImg2, applicationImg3, applicationImg4, app
     { href: '#constitution', text: 'Constitution' },
     { href: '#wifm', text: 'WIFM' },
     { href: '#rewards-systems', text: 'Rewards' },
-    { href: '#features', text: 'Features' },
+    { href: '#estimates', text: 'ESTIMATES' },
     { href: '#trips', text: 'All Trips' },
     { href: '#contact-us', text: 'Contact' },
 

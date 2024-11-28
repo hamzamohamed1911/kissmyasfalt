@@ -13,7 +13,6 @@ const Features = () => {
     exit: { opacity: 0, y: -50 },
   };
 
-  // Memoizing rideData to avoid recreation on every render
   const rideData = useMemo(() => [
     {
       type: "BROKE ASFALT",
@@ -81,10 +80,10 @@ const Features = () => {
   ], []);
 
   return (
-    <section id="features" className="w-auto h-auto pt-10 bg-[#d71515]">
+    <section id="estimates" className="w-auto h-auto pt-10 bg-[#d71515]">
       <div className="flex items-center flex-col justify-center container w-full h-auto py-8">
         <h1 className="lg:text-7xl md:text-5xl text-4xl font-bold text-white mb-8 text-center font-urban leading-10">
-          Features
+        ESTIMATES
         </h1>
 
         <div className="flex mb-6">
@@ -130,7 +129,6 @@ const Features = () => {
   );
 };
 
-// Memoizing component el two components to preventing re rendering
 const MemoizedDriver = memo(Driver);
 const MemoizedRider = memo(Rider);
 

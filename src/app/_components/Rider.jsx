@@ -74,46 +74,49 @@ const Rider = () => {
 
   const calculateRider = () => {
     if (rideTime && mileage && rideTypeRider) {
-      setLoading(true); 
+      setLoading(true);
       const selectedRide = rideData.find((ride) => ride.type === rideTypeRider);
-
-
-      setTimeout(() => {        if (selectedRide) {
-        const hourlyRate = selectedRide.hourlyRate;
-        const first15MilesRate = selectedRide.first15;
-        const second15MilesRate = selectedRide.second15;
-        const above30MilesRate = selectedRide.above30;
-
-        const distance = parseFloat(mileage);
-        const timeInMinutes = parseFloat(rideTime);
-
-        const hourlyCharge = (hourlyRate * timeInMinutes) / 60;
-        const first15Charge = Math.min(distance, 15) * first15MilesRate;
-        const second15Charge =
-          Math.max(Math.min(distance - 15, 15), 0) * second15MilesRate;
-        const above30Charge = Math.max(distance - 30, 0) * above30MilesRate;
-
-        const totalCharge =
-          hourlyCharge + first15Charge + second15Charge + above30Charge;
-        const DriverTakes = totalCharge * 0.9;
-
-        setRiderResult(
+  
+      setTimeout(() => {
+        if (selectedRide) {
+          const hourlyRate = selectedRide.hourlyRate;
+          const first15MilesRate = selectedRide.first15;
+          const second15MilesRate = selectedRide.second15;
+          const above30MilesRate = selectedRide.above30;
+  
+          const distance = parseFloat(mileage);
+          const timeInMinutes = parseFloat(rideTime);
+  
+          const hourlyCharge = (hourlyRate * timeInMinutes) / 60;
+          const first15Charge = Math.min(distance, 15) * first15MilesRate;
+          const second15Charge = Math.max(Math.min(distance - 15, 15), 0) * second15MilesRate;
+          const above30Charge = Math.max(distance - 30, 0) * above30MilesRate;
+          //adding the 5 dollor
+          let baseFee = 0;
+          if (rideTypeRider !== "BAD ASFALT" && rideTypeRider !== "FIRST CLASS ASFALT") {
+            baseFee = 5;
+          }
+  
+          const totalCharge = hourlyCharge + first15Charge + second15Charge + above30Charge + baseFee;
+          const DriverTakes = totalCharge * 0.9;
+  
+          setRiderResult(
             <p>
-              Your ride for {distance} miles and  {timeInMinutes} minutes in a  {rideTypeRider} will cost  <span className="font-bold">{totalCharge.toFixed(2)} $</span>   .
-              The driver takes  <span className="font-bold">{DriverTakes.toFixed(2)} $ </span>  .
+              Your ride for {distance} miles and {timeInMinutes} minutes in a {rideTypeRider} will cost
+              <span className="font-bold">{totalCharge.toFixed(2)} $</span>. The driver takes
+              <span className="font-bold">{DriverTakes.toFixed(2)} $ </span>.
             </p>
           );
-          
-      } else {
-        setRiderResult("Invalid ride type selected.");
-      }     setLoading(false); 
+        } else {
+          setRiderResult("Invalid ride type selected.");
+        }
+        setLoading(false);
       }, 1000);
-
- 
     } else {
       setRiderResult("Please fill in all fields.");
     }
   };
+  
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg">
