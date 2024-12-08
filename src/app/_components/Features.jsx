@@ -18,64 +18,55 @@ const Features = () => {
       type: "BROKE ASFALT",
       hourlyRate: 20,
       first15: 0.35,
-      second15: 0.5,
-      above30: 0.65,
+   
     },
     {
       type: "SMART ASFALT",
       hourlyRate: 27.5,
       first15: 0.35,
-      second15: 0.5,
-      above30: 0.65,
+   
     },
     {
       type: "FANCY ASFALT",
       hourlyRate: 35,
       first15: 0.35,
-      second15: 0.5,
-      above30: 0.65,
+   
     },
     {
       type: "CLASSIC ASFALT",
       hourlyRate: 35,
       first15: 0.35,
-      second15: 0.5,
-      above30: 0.65,
+   
     },
     {
       type: "HAIRY ASFALT",
       hourlyRate: 35,
       first15: 0.35,
-      second15: 0.5,
-      above30: 0.65,
+   
     },
     {
       type: "BIG ASFALT",
       hourlyRate: 45,
       first15: 0.35,
-      second15: 0.5,
-      above30: 0.65,
+   
     },
     {
       type: "BARE ASFALT",
       hourlyRate: 45,
       first15: 0.35,
-      second15: 0.5,
-      above30: 0.65,
+   
     },
     {
       type: "BAD ASFALT",
       hourlyRate: 150,
       first15: 0.35,
-      second15: 0.5,
-      above30: 0.65,
+   
     },
     {
       type: "FIRST CLASS ASFALT",
       hourlyRate: 150,
       first15: 0.35,
-      second15: 0.5,
-      above30: 0.65,
+   
     },
   ], []);
 

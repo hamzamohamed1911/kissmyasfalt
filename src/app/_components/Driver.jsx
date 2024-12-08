@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Driver = ({ rideData }) => {
   const [selectedRide, setSelectedRide] = useState("");
   const [totalMiles] = useState(35);
-  const [weeklyHours, setWeeklyHours] = useState(0);
+  const [weeklyHours, setWeeklyHours] = useState("");
   const [driverResult, setDriverResult] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -16,11 +16,10 @@ const Driver = ({ rideData }) => {
         if (ride) {
           const hourlyRate = ride.hourlyRate;
           const first15Cost = ride.first15 * 15;
-          const second15Cost = ride.second15 * 15;
-          const above30Cost = totalMiles > 30 ? (35 - 30) * ride.above30 : 0;
+     
       
           const totalCost =
-            hourlyRate + first15Cost + second15Cost + above30Cost ;
+            hourlyRate + first15Cost 
           const totalWeeklyEarnings = totalCost * weeklyHours * 0.9;
           const totalAnnualEarnings = totalWeeklyEarnings * 52;
 
