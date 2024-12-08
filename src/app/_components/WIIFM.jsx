@@ -133,12 +133,12 @@ const WIIFM = () => {
               platform.
             </li>
 
-            <li>
+            {/* <li>
               <strong className="text-primary">
               Second Chances </strong>
               Opportunity for users to redeem themselves and
               rebuild their lives.
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
