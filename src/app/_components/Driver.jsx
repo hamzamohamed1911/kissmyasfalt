@@ -18,13 +18,9 @@ const Driver = ({ rideData }) => {
           const first15Cost = ride.first15 * 15;
           const second15Cost = ride.second15 * 15;
           const above30Cost = totalMiles > 30 ? (35 - 30) * ride.above30 : 0;
-          //adding the 5 dollor
-          let baseFee = 0;
-          if (selectedRide !== "BAD ASFALT" && selectedRide !== "FIRST CLASS ASFALT") {
-            baseFee = 5;
-          }
+      
           const totalCost =
-            hourlyRate + first15Cost + second15Cost + above30Cost + baseFee;
+            hourlyRate + first15Cost + second15Cost + above30Cost ;
           const totalWeeklyEarnings = totalCost * weeklyHours * 0.9;
           const totalAnnualEarnings = totalWeeklyEarnings * 52;
 

@@ -6,7 +6,7 @@ import { appStoreIcon, googlePlayIcon, Logo } from "../../../public";
 import { links } from "../_constants";
 const Footer = () => {
   return (
-    <footer className="bg-[#2a2a2a]   dark:bg-gray-900 font-urban">
+    <footer className="bg-[#2a2a2a] dark:bg-gray-900 font-urban">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <ul className="flex flex-wrap items-center justify-center gap-4 py-4 text-md md:text-xl font-medium text-white sm:mb-0 dark:text-gray-400">

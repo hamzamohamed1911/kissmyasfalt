@@ -91,13 +91,9 @@ const Rider = () => {
           const first15Charge = Math.min(distance, 15) * first15MilesRate;
           const second15Charge = Math.max(Math.min(distance - 15, 15), 0) * second15MilesRate;
           const above30Charge = Math.max(distance - 30, 0) * above30MilesRate;
-          //adding the 5 dollor
-          let baseFee = 0;
-          if (rideTypeRider !== "BAD ASFALT" && rideTypeRider !== "FIRST CLASS ASFALT") {
-            baseFee = 5;
-          }
+       
   
-          const totalCharge = hourlyCharge + first15Charge + second15Charge + above30Charge + baseFee;
+          const totalCharge = hourlyCharge + first15Charge + second15Charge + above30Charge ;
           const DriverTakes = totalCharge * 0.9;
   
           setRiderResult(

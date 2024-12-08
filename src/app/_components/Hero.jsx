@@ -1,13 +1,10 @@
-import { appStore, googlePlay, heroImg1, heroImg2 } from "../../../public";
-import Countdown from "./Countdown";
+import {  heroImg1, heroImg2 } from "../../../public";
 import HeroImages from "./HeroImages";
-import Image from "next/image";
 
 const Hero = () => {
   return (
     <section id="/" className="  h-full w-full md:px-0 px-4   my-20 ">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-4 items-center  justify-between container min-h-[calc(110vh-90px)]    w-full     text-primary">
-                {/* Text Section */}
 
         <div className="col-span-1  w-full ">
           <div className="xl:text-6xl lg:text-5xl md:text-6xl sm:text-5xl text-4xl font-extrabold  font-urban	 text-center lg:text-left">
@@ -33,7 +30,7 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 justify-center lg:justify-start items-center lg:items-start md:my-12 my-6">
-            <Countdown/>
+            <h2 className="font-urban  lg:text-7xl md:text-6xl text-5xl  font-extrabold text-Secondary">Coming s00n</h2>
             {/* <button
               href="https://www.apple.com/app-store/"
               target="_blank"
