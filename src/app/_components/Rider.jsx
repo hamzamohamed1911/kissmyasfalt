@@ -4,64 +4,55 @@ const rideData = [
     type: "BROKE ASFALT",
     hourlyRate: 20,
     first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
+    
   },
   {
     type: "SMART ASFALT",
     hourlyRate: 27.5,
     first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
+    
   },
   {
     type: "FANCY ASFALT",
     hourlyRate: 35,
     first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
+    
   },
   {
     type: "CLASSIC ASFALT",
     hourlyRate: 35,
     first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
+    
   },
   {
     type: "HAIRY ASFALT",
     hourlyRate: 35,
     first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
+    
   },
   {
     type: "BIG ASFALT",
     hourlyRate: 50,
     first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
+    
   },
   {
     type: "NAKED ASFALT",
     hourlyRate: 50,
     first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
+    
   },
   {
     type: "BAD ASFALT",
     hourlyRate: 180,
     first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
+    
   },
   {
     type: "FIRST CLASS ASFALT",
     hourlyRate: 180,
     first15: 0.35,
-    second15: 0.5,
-    above30: 0.65,
+    
   },
 ];
 const Rider = () => {
@@ -81,19 +72,17 @@ const Rider = () => {
         if (selectedRide) {
           const hourlyRate = selectedRide.hourlyRate;
           const first15MilesRate = selectedRide.first15;
-          const second15MilesRate = selectedRide.second15;
-          const above30MilesRate = selectedRide.above30;
+       
   
           const distance = parseFloat(mileage);
           const timeInMinutes = parseFloat(rideTime);
   
           const hourlyCharge = (hourlyRate * timeInMinutes) / 60;
           const first15Charge = Math.min(distance, 15) * first15MilesRate;
-          const second15Charge = Math.max(Math.min(distance - 15, 15), 0) * second15MilesRate;
-          const above30Charge = Math.max(distance - 30, 0) * above30MilesRate;
+        
        
   
-          const totalCharge = hourlyCharge + first15Charge + second15Charge + above30Charge ;
+          const totalCharge = hourlyCharge + first15Charge ;
           const DriverTakes = totalCharge * 0.9;
   
           setRiderResult(
