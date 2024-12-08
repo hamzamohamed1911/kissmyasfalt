@@ -40,7 +40,7 @@ const Features = () => {
     },
     {
       type: "HAIRY ASFALT",
-      hourlyRate: 40,
+      hourlyRate: 35,
       first15: 0.35,
    
     },

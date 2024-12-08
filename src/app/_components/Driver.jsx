@@ -99,7 +99,7 @@ const Driver = ({ rideData }) => {
         </div>
       )}
       <ol className="list-disc pl-6 mt-2 font-medium">
-        <li>Calculation is based on Average of 35 miles / hr.</li>
+        <li>Calculation is based on only short trips.</li>
         <li>Calculation is based on non stop rides back to back.</li>
       </ol>
     </div>
