@@ -15,7 +15,7 @@ const Driver = ({ rideData }) => {
         const ride = rideData.find((r) => r.type === selectedRide);
         if (ride) {
           const hourlyRate = ride.hourlyRate;
-          const first15Cost = ride.first15 * 15;
+          const first15Cost = ride.first15 * 35;
      
       
           const totalCost =
@@ -100,6 +100,8 @@ const Driver = ({ rideData }) => {
       )}
       <ol className="list-disc pl-6 mt-2 font-medium">
         <li>Calculation is based on only short trips.</li>
+        <li>Calculation is based 35 mile per hour.</li>
+
         <li>Calculation is based on non stop rides back to back.</li>
       </ol>
     </div>
