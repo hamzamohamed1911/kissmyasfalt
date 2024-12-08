@@ -34,19 +34,19 @@ const Features = () => {
     },
     {
       type: "CLASSIC ASFALT",
-      hourlyRate: 35,
+      hourlyRate: 40,
       first15: 0.35,
    
     },
     {
       type: "HAIRY ASFALT",
-      hourlyRate: 35,
+      hourlyRate: 40,
       first15: 0.35,
    
     },
     {
       type: "BIG ASFALT",
-      hourlyRate: 45,
+      hourlyRate: 50,
       first15: 0.35,
    
     },
