@@ -49,7 +49,7 @@ import { applicationImg1, applicationImg2, applicationImg3, applicationImg4, app
     coverImage: exoticrides,
     subTrips: [
       {
-        type: "Naked Asfalt",
+        type: "BARE Asfalt",
         description: "Wanna go around in a convertible, were literally sky is the limit.. why not.",
         subTripImage: nakedAsfalt 
       },

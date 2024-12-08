@@ -57,7 +57,7 @@ const Features = () => {
       above30: 0.65,
     },
     {
-      type: "NAKED ASFALT",
+      type: "BARE ASFALT",
       hourlyRate: 45,
       first15: 0.35,
       second15: 0.5,
