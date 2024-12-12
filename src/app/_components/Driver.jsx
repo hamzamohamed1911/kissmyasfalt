@@ -25,10 +25,10 @@ const Driver = ({ rideData }) => {
 
           setDriverResult(
             <p>
-              Your weekly earnings are <span className="font-bold">
+              Your estimated weekly earnings, <span className="font-bold">
                 {totalWeeklyEarnings.toFixed(2)}
               </span>
-              $ and your annual earnings are <span className="font-bold">
+              $ your estimated annual <span className="font-bold">
                 {totalAnnualEarnings.toFixed(2)}
               </span>
               $.

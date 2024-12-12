@@ -181,18 +181,18 @@ const RewardsSystem = () => {
                 You’re not just earning points; you’re getting real value!
                 <ol className="list-disc space-y-3 pl-6 mt-2">
                   <li>
-                    <strong>Session</strong> Of the total service fee
-                    <strong className="text-[#d71515]"> 1% </strong> goes to top
+                    <strong>Session</strong> <strong className="text-[#d71515]"> 1% </strong>  Of the total service fee
+                    goes to top
                     drivers.
                   </li>
                   <li>
-                    <strong>Weekly</strong> Of the total service
-                    <strong className="text-[#d71515]"> 0.5% </strong> fee is up
+                    <strong>Weekly</strong> <strong className="text-[#d71515]"> 0.5% </strong> Of the total service
+                     fee is up
                     for grabs.
                   </li>
                   <li>
-                    <strong>Monthly</strong> Of the total service fee
-                    <strong className="text-[#d71515]"> 0.25% </strong> rewards
+                    <strong>Monthly</strong> <strong className="text-[#d71515]"> 0.25% </strong> Of the total service fee
+                     rewards
                     the best performers.
                   </li>
                 </ol>
